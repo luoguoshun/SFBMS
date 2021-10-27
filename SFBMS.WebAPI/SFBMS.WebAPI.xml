@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SFBMS.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SFBMS.WebAPI.Controllers.Base.BaseController.ApiContext">
+            <summary>
+            获取Api上下文
+            </summary>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.Base.BaseController.JsonResult``1(System.Boolean,System.String,``0)">
+            <summary>
+            定义结果未知的返回值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.Base.BaseController.JsonSuccess(System.String,System.Object)">
+            <summary>
+            定义成功的返回值
+            </summary>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.Base.BaseController.JsonFailt(System.String)">
+            <summary>
+            定义失败的返回值
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.GetBookList(SFBMS.Contracts.BookModule.SelectBookDTO)">
+            <summary>
+            获取书籍列表
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.GetBookTypeList">
+            <summary>
+            获取书籍类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.PolicyHelper.PolicyHandler">
+            <summary>
+            自定义权限控制类(通过继承 AuthorizationHandler 来实现我们的授权逻辑)
+            </summary>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.ExceptionsFilter.GlobalExceptionMiddleware">
+            <summary>
+            全局异常拦截器 GlobalExceptionsFilter无法拦截的在此拦截
+            </summary>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.ExceptionsFilter.GlobalExceptionsFilter">
+            <summary>
+            全局异常处理过滤器(只能管到Controller而已 之外的异常无法捕获)
+            </summary>
+        </member>
+        <member name="P:SFBMS.WebAPI.Infrastructure.IdentityServer4.Config.ApiSources">
+            <summary>
+            资源集合(定义的每一个资源可理解为一个程序)
+            </summary>
+        </member>
+        <member name="P:SFBMS.WebAPI.Infrastructure.IdentityServer4.Config.Clients">
+            <summary>
+            客服端集合(用于访问API资源的群体)
+            </summary>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.IdentityServer4.ResourceOwnerPasswordValidator">
+            <summary>
+            继承IResourceOwnerPassword验证器来实现自己的验证规则
+            </summary>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.IdentityServer4.User">
+            <summary>
+            存储在用户信息实体
+            </summary>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.IdentityServer4.ClientUserHandler">
+            <summary>
+            获取到用户信息
+            </summary>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.IdentityServer4.AdminUserHandler">
+            <summary>
+            获取到管理员信息
+            </summary>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.Models.MyApiResult">
+            <summary>
+            通用返回信息类
+            </summary>
+        </member>
+        <member name="P:SFBMS.WebAPI.Infrastructure.Models.MyApiResult.Success">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:SFBMS.WebAPI.Infrastructure.Models.MyApiResult.Message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:SFBMS.WebAPI.Infrastructure.Models.MyApiResult.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="M:SFBMSAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            运行时调用，用于配置HTTP请求管道。
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory">日志工厂</param>
+        </member>
+        <member name="M:SFBMSAPI.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            自定义容器服务注册
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddCustomSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Swagger服务
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddEFCore(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            EFCore服务
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddCustomAddCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            跨域服务
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddCusomException(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            异常处理
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddIdentityservice(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            IdentityServer服务
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddTokenAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            自定义AccessToken验证规则
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

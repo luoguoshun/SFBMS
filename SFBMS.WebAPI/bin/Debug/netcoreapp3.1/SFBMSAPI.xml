@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SFBMS.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:OHEXML.Controllers.Base.BaseController.ApiContext">
+            <summary>
+            获取Api上下文
+            </summary>
+        </member>
+        <member name="M:OHEXML.Controllers.Base.BaseController.JsonResult``1(System.Boolean,System.String,``0)">
+            <summary>
+            定义结果未知的返回值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OHEXML.Controllers.Base.BaseController.JsonSuccess(System.String,System.Object)">
+            <summary>
+            定义成功的返回值H
+            </summary>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OHEXML.Controllers.Base.BaseController.JsonFailt(System.String)">
+            <summary>
+            定义失败的返回值
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.Models.MyApiResult">
+            <summary>
+            通用返回信息类
+            </summary>
+        </member>
+        <member name="P:SFBMS.WebAPI.Infrastructure.Models.MyApiResult.Success">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:SFBMS.WebAPI.Infrastructure.Models.MyApiResult.Message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:SFBMS.WebAPI.Infrastructure.Models.MyApiResult.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="M:SFBMSAPI.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            自定义容器服务注册
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddCustomSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Swagger服务
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddEFCore(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            EFCore服务
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SFBMS.Common\SFBMS.Common.csproj" />
+    <ProjectReference Include="..\SFBMS.Contracts\SFBMS.Contracts.csproj" />
+    <ProjectReference Include="..\SFBMS.Repository\SFBMS.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

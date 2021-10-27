@@ -1,0 +1,112 @@
+     时间: 2021-10-27 15:14:40.8195
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:40.8671
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:40.8950
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:40.8958
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:40.9120
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:40.9120
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:40.9120
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:40.9120
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:50.2025
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:50.2025
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:50.3870
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:14:50.3870
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:15:03.5196
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: ErrorTest
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-27 15:15:03.7175
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: ErrorTest
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

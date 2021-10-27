@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SFBMS.Common\SFBMS.Common.csproj" />
+    <ProjectReference Include="..\SFBMS.Contracts\SFBMS.Contracts.csproj" />
+    <ProjectReference Include="..\SFBMS.Entity\SFBMS.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientModule\Implement\" />
+  </ItemGroup>
+
+</Project>
