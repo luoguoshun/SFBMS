@@ -20,6 +20,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using NLog.Extensions.Logging;
 using SFBMS.Common.CatchResource;
+using SFBMS.Common.CatchResource.Implement;
 using SFBMS.Common.EnumList;
 using SFBMS.Common.SiteConfig;
 using SFBMS.Entity.Context;
