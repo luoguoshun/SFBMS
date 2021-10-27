@@ -6160,11 +6160,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Entity\\SFBMS.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Entity\\SFBMS.Entity.csproj",
       "projectName": "SFBMS.Entity",
-      "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Entity\\SFBMS.Entity.csproj",
+      "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Entity\\SFBMS.Entity.csproj",
       "packagesPath": "C:\\Users\\罗国顺\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Entity\\obj\\",
+      "outputPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6183,8 +6183,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\SFBMS.Common.csproj": {
-              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\SFBMS.Common.csproj"
+            "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj": {
+              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj"
             }
           }
         }

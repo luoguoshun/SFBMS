@@ -6158,11 +6158,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Service\\SFBMS.Service.csproj",
+      "projectUniqueName": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Service\\SFBMS.Service.csproj",
       "projectName": "SFBMS.Service",
-      "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Service\\SFBMS.Service.csproj",
+      "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Service\\SFBMS.Service.csproj",
       "packagesPath": "C:\\Users\\罗国顺\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Service\\obj\\",
+      "outputPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6181,14 +6181,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\SFBMS.Common.csproj": {
-              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\SFBMS.Common.csproj"
+            "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj": {
+              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj"
             },
-            "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Contracts\\SFBMS.Contracts.csproj": {
-              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Contracts\\SFBMS.Contracts.csproj"
+            "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Contracts\\SFBMS.Contracts.csproj": {
+              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Contracts\\SFBMS.Contracts.csproj"
             },
-            "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Repository\\SFBMS.Repository.csproj": {
-              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Repository\\SFBMS.Repository.csproj"
+            "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Repository\\SFBMS.Repository.csproj": {
+              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Repository\\SFBMS.Repository.csproj"
             }
           }
         }

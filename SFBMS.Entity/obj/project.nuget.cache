@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D1JtFG/526AOdjI1baPQ+MOtragkL5dYtntFN1AS5uV/wHRC16uTWcDixmZC5GZmkzBbFV8au/Q8QPKff5yj2w==",
+  "dgSpecHash": "c8++370YvWY3zTZO4NEi8bS04+/1/Ld6vah440fmAm0RzXACq0xPB6mA3EtDFtXF7Qzf173/xgA9xLD05lxhXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Entity\\SFBMS.Entity.csproj",
+  "projectFilePath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Entity\\SFBMS.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\罗国顺\\.nuget\\packages\\anglesharp\\0.16.1\\anglesharp.0.16.1.nupkg.sha512",
     "C:\\Users\\罗国顺\\.nuget\\packages\\htmlagilitypack\\1.11.37\\htmlagilitypack.1.11.37.nupkg.sha512",

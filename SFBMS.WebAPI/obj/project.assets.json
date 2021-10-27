@@ -8304,11 +8304,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.WebAPI\\SFBMS.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.WebAPI\\SFBMS.WebAPI.csproj",
       "projectName": "SFBMS.WebAPI",
-      "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.WebAPI\\SFBMS.WebAPI.csproj",
+      "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.WebAPI\\SFBMS.WebAPI.csproj",
       "packagesPath": "C:\\Users\\罗国顺\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8327,17 +8327,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\SFBMS.Common.csproj": {
-              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\SFBMS.Common.csproj"
+            "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj": {
+              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj"
             },
-            "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Contracts\\SFBMS.Contracts.csproj": {
-              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Contracts\\SFBMS.Contracts.csproj"
+            "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Contracts\\SFBMS.Contracts.csproj": {
+              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Contracts\\SFBMS.Contracts.csproj"
             },
-            "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Entity\\SFBMS.Entity.csproj": {
-              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Entity\\SFBMS.Entity.csproj"
+            "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Entity\\SFBMS.Entity.csproj": {
+              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Entity\\SFBMS.Entity.csproj"
             },
-            "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Service\\SFBMS.Service.csproj": {
-              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Service\\SFBMS.Service.csproj"
+            "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Service\\SFBMS.Service.csproj": {
+              "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Service\\SFBMS.Service.csproj"
             }
           }
         }

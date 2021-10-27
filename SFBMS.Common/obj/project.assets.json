@@ -1027,11 +1027,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\SFBMS.Common.csproj",
+      "projectUniqueName": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj",
       "projectName": "SFBMS.Common",
-      "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\SFBMS.Common.csproj",
+      "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj",
       "packagesPath": "C:\\Users\\罗国顺\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Common\\obj\\",
+      "outputPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

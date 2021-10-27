@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UTGEQbVJyhCLj7FTz4A2RRFhwsFRuB0ok9x0Kl0YGHntei5gv1x62PyHtlgHTQptARnrBVuRw/QXMCJMtAzzZA==",
+  "dgSpecHash": "dspWVU9giALZKQ+tv7i+QEhDLTJSEd7MuzBa4nSq+RTx9VzNP+qtFzN5NGP5cM4cn7G+9Q9NHim1Z0WzHVjTdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.WebAPI\\SFBMS.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.WebAPI\\SFBMS.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\罗国顺\\.nuget\\packages\\anglesharp\\0.16.1\\anglesharp.0.16.1.nupkg.sha512",
     "C:\\Users\\罗国顺\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",

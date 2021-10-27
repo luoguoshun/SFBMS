@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cIDxXwipIgYm1o3dpsBxF/ZqHv+ERMogA7ugSdpNMl0eJsX9lzjBT64NXeU27/AZLnbYpmgDg4WbcKz8IoHHHg==",
+  "dgSpecHash": "CnoMM03TKfJ5sk3UTBLYWoyUQX5uh8JnyWvSkQeeK5YwjOt8Kc/jHwBhfx+GneG2vJAsE1j0tNHgCQs/uYNKeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\罗国顺\\Desktop\\SFBMS\\SFBMS.Repository\\SFBMS.Repository.csproj",
+  "projectFilePath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Repository\\SFBMS.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\罗国顺\\.nuget\\packages\\anglesharp\\0.16.1\\anglesharp.0.16.1.nupkg.sha512",
     "C:\\Users\\罗国顺\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
