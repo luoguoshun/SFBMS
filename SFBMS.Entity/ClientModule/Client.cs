@@ -17,7 +17,7 @@ namespace SFBMS.Entity.ClientModule
         public string Password { get; set; }
         public Sex Sex { get; set; }
         /// <summary>
-        /// 学号
+        /// 身份证号
         /// </summary>
         public string IdNumber { get; set; }
         public string BirthDate { get; set; }

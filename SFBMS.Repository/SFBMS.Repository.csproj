@@ -15,8 +15,4 @@
     <ProjectReference Include="..\SFBMS.Entity\SFBMS.Entity.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ClientModule\Implement\" />
-  </ItemGroup>
-
 </Project>

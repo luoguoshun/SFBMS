@@ -4,11 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <WarningLevel>0</WarningLevel>
     <NoWin32Manifest>true</NoWin32Manifest>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
-    <DocumentationFile>C:\Users\罗国顺\Desktop\SFBMS\SFBMS.WebAPI\SFBMS.WebAPI.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\SFBMS.WebAPI.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -40,6 +41,9 @@
 
   <ItemGroup>
     <None Update="C:\Users\罗国顺\.nuget\packages\nlog.config\4.7.12\contentFiles\any\any\NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SFBMS.WebAPI.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

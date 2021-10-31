@@ -1,0 +1,248 @@
+     时间: 2021-10-28 16:59:14.6493
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 16:59:14.7090
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 16:59:14.7090
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 16:59:14.7090
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:05:06.2478
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:05:06.3131
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:05:06.3240
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:05:06.3240
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:08:01.0621
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:08:01.1117
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:08:01.1195
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:08:01.1195
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:14:21.7609
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:14:21.8303
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:14:21.8434
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:14:21.8434
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:24:59.2337
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:24:59.2913
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:24:59.3017
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:24:59.3017
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:25:11.6016
+     路由: http://localhost/map1
+     级别: Error
+     信息: 全局异常{系统编号：1;主机IP：::1;异常Uri：/map1; 异常描述：StatusCode cannot be set because the response has already started.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:25:47.5025
+     路由: http://localhost/map1
+     级别: Error
+     信息: 全局异常{系统编号：1;主机IP：::1;异常Uri：/map1; 异常描述：StatusCode cannot be set because the response has already started.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:34:28.7075
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:34:28.7679
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:34:28.7800
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:34:28.7800
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:34:45.6649
+     路由: http://localhost/map1
+     级别: Error
+     信息: 全局异常{系统编号：1;主机IP：::1;异常Uri：/map1; 异常描述：StatusCode cannot be set because the response has already started.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:36:41.1112
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:36:41.1703
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:36:41.1776
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-10-28 17:36:41.1776
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

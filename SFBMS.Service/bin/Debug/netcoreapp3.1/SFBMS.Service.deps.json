@@ -1199,6 +1199,9 @@
         }
       },
       "SFBMS.Contracts/1.0.0": {
+        "dependencies": {
+          "SFBMS.Common": "1.0.0"
+        },
         "runtime": {
           "SFBMS.Contracts.dll": {}
         }

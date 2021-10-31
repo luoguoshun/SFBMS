@@ -15,3 +15,15 @@ C:\Users\罗国顺\Desktop\SFBMS\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.C
 C:\Users\罗国顺\Desktop\SFBMS\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.csproj.CoreCompileInputs.cache
 C:\Users\罗国顺\Desktop\SFBMS\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.dll
 C:\Users\罗国顺\Desktop\SFBMS\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.pdb
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\bin\Debug\netcoreapp3.1\SFBMS.Contracts.deps.json
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\bin\Debug\netcoreapp3.1\SFBMS.Contracts.dll
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\bin\Debug\netcoreapp3.1\SFBMS.Contracts.pdb
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.csprojAssemblyReference.cache
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.AssemblyInfoInputs.cache
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.AssemblyInfo.cs
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.dll
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.pdb
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\bin\Debug\netcoreapp3.1\SFBMS.Common.dll
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\bin\Debug\netcoreapp3.1\SFBMS.Common.pdb
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.Contracts\obj\Debug\netcoreapp3.1\SFBMS.Contracts.csproj.CopyComplete

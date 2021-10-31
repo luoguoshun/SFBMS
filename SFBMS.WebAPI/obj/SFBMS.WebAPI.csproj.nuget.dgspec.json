@@ -114,7 +114,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj": {
+                "projectPath": "C:\\Users\\罗国顺\\Desktop\\SFBMSAPI\\SFBMS.Common\\SFBMS.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

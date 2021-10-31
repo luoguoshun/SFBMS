@@ -59,15 +59,21 @@ namespace SFBMSAPI
         /// <param name="app"></param>
         /// <param name="env"></param>
         /// <param name="loggerFactory">日志工厂</param>
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
-        {
-            loggerFactory.AddNLog();
-            loggerFactory.ConfigureNLog("Nlog.config");
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {          
+            //请求管道中的每个中间件组件负责调用管道中的下一个组件，或使管道短路。 
+            //当中间件短路时，它被称为“终端中间件”，因为它阻止中间件进一步处理请求。
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMiddleware<GlobalExceptionMiddleware>();//全局异常处理中间件
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
+            }
+            app.UseMiddleware<GlobalExceptionMiddleware>();
+
             #region 配置Swagger
             app.UseSwagger();
             app.UseSwaggerUI(options =>
@@ -88,6 +94,7 @@ namespace SFBMSAPI
                     c.Context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
                 }
             });
+
             app.UseRouting();
 
             app.UseCors("AllowCors");
@@ -237,7 +244,6 @@ namespace SFBMSAPI
             //});
             #endregion
 
-            #region 允许任何网站访问
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowCors", builder =>
@@ -248,7 +254,6 @@ namespace SFBMSAPI
                     .AllowCredentials();
                 });
             });
-            #endregion
             return services;
         }
         /// <summary>
@@ -335,4 +340,5 @@ namespace SFBMSAPI
             return services;
         }
     }
+    
 }
