@@ -37,14 +37,6 @@ namespace SFBMS.WebAPI.Controllers.Base
             }
             return _apiContext;
         }
-        /// <summary>
-        /// 定义结果未知的返回值
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="success"></param>
-        /// <param name="message"></param>
-        /// <param name="data"></param>
-        /// <returns></returns>
         protected virtual IActionResult JsonResult<T>(bool success, string message, T data)
         {
             return Ok(new MyApiResult

@@ -16,6 +16,7 @@ namespace SFBMS.Entity.BookModule
         [Key]
         public int Id { get; set; }
         public int TypeId { get; set; }
+        public string BookName { get; set; }
         public string Author { get; set; }
         public string Press { get; set; }
         public DateTime PublicationDate { get; set; }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SFBMS.Contracts.LogMolue
+namespace SFBMS.Contracts.LogModule
 {
     public class LogDTO
     {
@@ -21,5 +21,11 @@ namespace SFBMS.Contracts.LogMolue
     {
         public IEnumerable<LogDTO> Logs { get; set; }
         public int Count { get; set; }
+    }
+    public class SelectLogDTO
+    {
+        public DateTime[] Dates { get; set; }
+        public string Level { get; set; }
+        public string Message { get; set; }
     }
 }

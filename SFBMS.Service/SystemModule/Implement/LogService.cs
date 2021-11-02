@@ -1,4 +1,4 @@
-﻿using SFBMS.Contracts.LogMolue;
+﻿using SFBMS.Contracts.LogModule;
 using SFBMS.Repository.SystemModule;
 using System;
 using System.Threading.Tasks;
@@ -12,10 +12,14 @@ namespace SFBMS.Service.SystemModule.Implement
         {
             _logRepository = logRepository;
         }
-
-        public Task<LogOutDTO> GetLogList()
+        /// <summary>
+        /// 获取日志列表
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        public async Task<LogOutDTO> GetLogListAsync(SelectLogDTO dto)
         {
-            throw new NotImplementedException();
+            return await _logRepository.GetLogListAsync(dto);
         }
     }
 }

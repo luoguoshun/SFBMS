@@ -21,7 +21,7 @@ namespace SFBMS.Repository.ClientModule.Implement
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-        public async Task<ClientOutDTO> GetClientList(SelectClientDTO dto)
+        public async Task<ClientOutDTO> GetClientListAsync(SelectClientDTO dto)
         {
             using (var connection = new SqlConnection(ConnectionString))
             {
@@ -40,10 +40,8 @@ namespace SFBMS.Repository.ClientModule.Implement
                 ClientOutDTO data = new ClientOutDTO
                 {
                     Clients= await connection.QueryAsync<ClientDTO>($@"
-                     select b.Id,b.BookName,b.Author,b.Press,b.PublicationDate,b.Price,b.Inventory,b.Descripcion,
-                     t.TypeName
-                     from BookInfo as b
-                     left join BookType as t on b.TypeId=t.TypeId
+                     select c.ClientNo,c.Name,c.Sex,c.IdNumber,c.BirthDate,c.Address,c.Phone,c.Flag
+                     from ClientInfo as c 
                      Where {where}", paramters),
                     Count = await connection.QueryFirstOrDefaultAsync<int>($@"
                      select COUNT(*)

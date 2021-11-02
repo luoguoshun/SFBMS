@@ -37,9 +37,12 @@ namespace SFBMS.WebAPI.Controllers.BookModule
         [AppAuthorize(AppTypes.Background)]
         public async Task<IActionResult> GetBookList(SelectBookDTO dto)
         {
-            _logger.LogError("ErrorTest");
-            var data = await _bookServe.GetBookListAsync(dto);
-            return data != null ? JsonSuccess("OK", data) : JsonFailt("NO");
+            var books = await _bookServe.GetBookListAsync(dto);
+            if (books is null)
+            {
+                return JsonFailt("");
+            }
+            return JsonSuccess("", books);
         }
         /// <summary>
         /// 获取书籍类型列表
@@ -49,8 +52,39 @@ namespace SFBMS.WebAPI.Controllers.BookModule
         [AppAuthorize(AppTypes.Background)]
         public async Task<IActionResult> GetBookTypeList()
         {
-            var data = await _bookServe.GetBookTypeListAsync();
-            return data != null ? JsonSuccess("OK", data) : JsonFailt("NO");
+            var types = await _bookServe.GetBookTypeListAsync();
+            if (types is null)
+            {
+                return JsonFailt("无数据");
+            }
+            return JsonSuccess("", types);
+        }
+        /// <summary>
+        /// 删除书籍
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [AppAuthorize(AppTypes.Background)]
+        public async Task<IActionResult> DeleteBooks(DeleteBookDTO dto)
+        {
+            var types = await _bookServe.DeleteBooksAsync(dto.BookIds);
+            if (!types)
+            {
+                return JsonFailt("删除失败");
+            }
+            return JsonSuccess("删除成功", types);
+        }
+        [HttpPost]
+        [AppAuthorize(AppTypes.Background)]
+        public async Task<IActionResult> UpdateBook(UpdateBookDTO dto)
+        {
+            bool types = await _bookServe.UpdateBooksAsync(dto);
+            if (!types)
+            {
+                return JsonFailt("修改失败");
+            }
+            return JsonSuccess("删修改功", types);
         }
     }
 }

@@ -9,7 +9,6 @@ namespace SFBMS.Contracts.ClientModule
     {
         public int ClientNo { get; set; }
         public string Name { get; set; }
-        public string Password { get; set; }
         public Sex Sex { get; set; }
         public string SexStr => Sex.ToString();
         /// <summary>
@@ -22,9 +21,8 @@ namespace SFBMS.Contracts.ClientModule
         /// 联系方式
         /// </summary>
         public string Phone { get; set; }
-        public string Flag { get; set; }
+        public int Flag { get; set; }
     }
-
     public class ClientOutDTO
     {
         public IEnumerable<ClientDTO> Clients { get; set; }

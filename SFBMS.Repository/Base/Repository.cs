@@ -206,7 +206,6 @@ namespace SFBMS.Repository.Base
         {           
             return await _dbContext.SaveChangesAsync(cancellationToken) > 0;
         }
-
         #endregion
 
     }

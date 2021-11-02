@@ -15,6 +15,6 @@ namespace SFBMS.Repository.ClientModule
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-        Task<ClientOutDTO> GetClientList(SelectClientDTO dto);
+        Task<ClientOutDTO> GetClientListAsync(SelectClientDTO dto);
     }
 }

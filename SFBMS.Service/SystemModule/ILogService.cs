@@ -1,4 +1,4 @@
-﻿using SFBMS.Contracts.LogMolue;
+﻿using SFBMS.Contracts.LogModule;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +8,6 @@ namespace SFBMS.Service.SystemModule
 {
    public interface ILogService
     {
-      Task<LogOutDTO>  GetLogList();
+      Task<LogOutDTO>  GetLogListAsync(SelectLogDTO dto);
     }
 }

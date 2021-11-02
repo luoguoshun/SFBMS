@@ -17,6 +17,7 @@ namespace SFBMS.Service.BookModule.Implement
             _bookRepository = bookRepository;
             _bookTypeRepositoty = bookTypeRepositoty;
         }
+       
         /// <summary>
         /// 获取书籍列表
         /// </summary>
@@ -34,6 +35,40 @@ namespace SFBMS.Service.BookModule.Implement
         {
             var data= await _bookTypeRepositoty.GetAllAsync();
             return data.Select(types => new BookTypeDTO {TypeId = types.TypeId, TypeName = types.TypeName }).ToList();
+        }
+        /// <summary>
+        /// 删除书籍
+        /// </summary>
+        /// <param name="booksId"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteBooksAsync(int[] bookIds)
+        {
+            foreach (var item in bookIds)
+            {
+                var book = await _bookRepository.GetEntityAsync(x => x.Id == item);
+                _bookRepository.DeleteEntity(book);
+            }
+            return await _bookRepository.SaveChangeAsync();
+        }
+        /// <summary>
+        /// 修改书籍
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        public async Task<bool> UpdateBooksAsync(UpdateBookDTO dto)
+        {
+            var book = await _bookRepository.GetEntityAsync(x => x.Id == dto.Id);
+            if(book is null)
+            {
+                return false;
+            }
+            book.BookName = dto.BookName;
+            book.TypeId = dto.TypeId;
+            book.Price = dto.Price;
+            book.Inventory = dto.Inventory;
+            book.Descripcion = dto.Descripcion;
+            book.PublicationDate = dto.PublicationDate;
+            return await _bookRepository.SaveChangeAsync();
         }
     }
 }

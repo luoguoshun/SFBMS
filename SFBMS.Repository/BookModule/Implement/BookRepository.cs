@@ -54,7 +54,7 @@ namespace SFBMS.Repository.BookModule.Implement
                 {
                     books = await connection.QueryAsync<BookDTO>($@"
                      select b.Id,b.BookName,b.Author,b.Press,b.PublicationDate,b.Price,b.Inventory,b.Descripcion,
-                     t.TypeName
+                     t.TypeId,t.TypeName
                      from BookInfo as b
                      left join BookType as t on b.TypeId=t.TypeId
                      Where {where}", paramters),

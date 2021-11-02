@@ -9,16 +9,6 @@
             获取Api上下文
             </summary>
         </member>
-        <member name="M:SFBMS.WebAPI.Controllers.Base.BaseController.JsonResult``1(System.Boolean,System.String,``0)">
-            <summary>
-            定义结果未知的返回值
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="success"></param>
-            <param name="message"></param>
-            <param name="data"></param>
-            <returns></returns>
-        </member>
         <member name="M:SFBMS.WebAPI.Controllers.Base.BaseController.JsonSuccess(System.String,System.Object)">
             <summary>
             定义成功的返回值
@@ -47,7 +37,21 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:SFBMS.WebAPI.Controllers.SystemModule.LogController.tt">
+        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.DeleteBooks(SFBMS.Contracts.BookModule.DeleteBookDTO)">
+            <summary>
+            删除书籍
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.ClientModule.ClientController.GetClientList(SFBMS.Contracts.ClientModule.SelectClientDTO)">
+            <summary>
+            获取用户列表
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.SystemModule.LogController.GetLogList(SFBMS.Contracts.LogModule.SelectLogDTO)">
             <summary>
             获取日志列表
             </summary>

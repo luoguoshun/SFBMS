@@ -19,5 +19,7 @@ namespace SFBMS.Service.BookModule
         /// </summary>
         /// <returns></returns>
         Task<IList<BookTypeDTO>> GetBookTypeListAsync();
+        Task<bool> DeleteBooksAsync(int[] bookIds);
+        Task<bool> UpdateBooksAsync(UpdateBookDTO dto);
     }
 }
