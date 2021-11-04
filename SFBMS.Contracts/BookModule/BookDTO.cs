@@ -4,6 +4,9 @@ using System.Text;
 
 namespace SFBMS.Contracts.BookModule
 {
+    /// <summary>
+    /// 查询模型
+    /// </summary>
     public class BookDTO
     {
         public int Id { get; set; }
@@ -42,7 +45,7 @@ namespace SFBMS.Contracts.BookModule
         public string[] PublicationDates { get; set; }
     }
     /// <summary>
-    /// 删除实体
+    /// 删除模型
     /// </summary>
     public class DeleteBookDTO
     {
@@ -68,5 +71,26 @@ namespace SFBMS.Contracts.BookModule
     {
         public int TypeId { get; set; }
         public string TypeName { get; set; }
+    }
+    /// <summary>
+    /// 添加模型
+    /// </summary>
+    public class CreateBookDTO
+    {
+        public string BookName { get; set; }
+        public int TypeId { get; set; }
+        public string Author { get; set; }
+        public string Press { get; set; }
+        public DateTime PublicationDate { get; set; }
+        public int Price { get; set; }
+        /// <summary>
+        /// 库存量
+        /// </summary>
+        public int Inventory { get; set; }
+        public string Descripcion { get; set; }
+        /// <summary>
+        /// 封面地址
+        /// </summary>
+        public string ImageSrc { get; set; }
     }
 }

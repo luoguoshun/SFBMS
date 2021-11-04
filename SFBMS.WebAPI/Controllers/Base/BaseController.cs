@@ -37,21 +37,15 @@ namespace SFBMS.WebAPI.Controllers.Base
             }
             return _apiContext;
         }
-        protected virtual IActionResult JsonResult<T>(bool success, string message, T data)
+        protected virtual IActionResult JsonResult(bool success, string message)
         {
             return Ok(new MyApiResult
             {
                 Success = success,
                 Message = message,
-                Data = data
+                Data = null
             });
         }
-        /// <summary>
-        /// 定义成功的返回值
-        /// </summary>
-        /// <param name="message"></param>
-        /// <param name="data"></param>
-        /// <returns></returns>
         protected virtual IActionResult JsonSuccess(string message, object data)
         {
             return Ok(new MyApiResult
@@ -61,11 +55,22 @@ namespace SFBMS.WebAPI.Controllers.Base
                 Data = data
             });
         }
-        /// <summary>
-        /// 定义失败的返回值
-        /// </summary>
-        /// <param name="message"></param>
-        /// <returns></returns>
+        protected virtual IActionResult JsonSuccess(string message)
+        {
+            return Ok(new MyApiResult
+            {
+                Success = true,
+                Message = message,
+            });
+        }
+        protected virtual IActionResult JsonSuccess(object data)
+        {
+            return Ok(new MyApiResult
+            {
+                Success = true,
+                Data = data,
+            });
+        }
         protected virtual IActionResult JsonFailt(string message)
         {
             return Ok(new MyApiResult

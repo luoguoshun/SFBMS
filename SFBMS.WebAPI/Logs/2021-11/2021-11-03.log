@@ -1,0 +1,160 @@
+     时间: 2021-11-03 20:02:05.5644
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:02:05.6423
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:02:05.6584
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:02:05.6620
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:02:50.0320
+     路由: http://127.0.0.1/api/Background/Book/GetBookTypeList
+     级别: Error
+     信息: 全局异常{系统编号：1;主机IP：127.0.0.1;异常Uri：/api/Background/Book/GetBookTypeList; 异常描述：The operation was canceled.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:02:50.4383
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:02:50.6856
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:02:51.1276
+     路由: http://127.0.0.1/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号：1;主机IP：127.0.0.1;异常Uri：/api/Background/Book/GetBookList; 异常描述：Unexpected end of request content.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:27:47.2468
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:27:47.3190
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:27:47.3190
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:27:47.3190
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:27:56.0403
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 20:27:56.1853
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 23:11:23.5681
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 23:11:23.6349
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 23:11:23.6517
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 23:11:23.6517
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 23:12:03.5006
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-03 23:12:03.6456
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

@@ -44,6 +44,20 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
+        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.UpdateBook(SFBMS.Contracts.BookModule.UpdateBookDTO)">
+            <summary>
+            修改书籍
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.CreatesBook(System.Collections.Generic.List{SFBMS.Contracts.BookModule.CreateBookDTO})">
+            <summary>
+            新增书籍
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
         <member name="M:SFBMS.WebAPI.Controllers.ClientModule.ClientController.GetClientList(SFBMS.Contracts.ClientModule.SelectClientDTO)">
             <summary>
             获取用户列表

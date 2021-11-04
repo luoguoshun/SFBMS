@@ -38,11 +38,7 @@ namespace SFBMS.WebAPI.Controllers.BookModule
         public async Task<IActionResult> GetBookList(SelectBookDTO dto)
         {
             var books = await _bookServe.GetBookListAsync(dto);
-            if (books is null)
-            {
-                return JsonFailt("");
-            }
-            return JsonSuccess("", books);
+            return JsonSuccess(books);
         }
         /// <summary>
         /// 获取书籍类型列表
@@ -53,11 +49,7 @@ namespace SFBMS.WebAPI.Controllers.BookModule
         public async Task<IActionResult> GetBookTypeList()
         {
             var types = await _bookServe.GetBookTypeListAsync();
-            if (types is null)
-            {
-                return JsonFailt("无数据");
-            }
-            return JsonSuccess("", types);
+            return JsonSuccess(types);
         }
         /// <summary>
         /// 删除书籍
@@ -73,18 +65,49 @@ namespace SFBMS.WebAPI.Controllers.BookModule
             {
                 return JsonFailt("删除失败");
             }
-            return JsonSuccess("删除成功", types);
+            return JsonSuccess("删除成功");
         }
+        /// <summary>
+        /// 修改书籍
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
         [HttpPost]
         [AppAuthorize(AppTypes.Background)]
         public async Task<IActionResult> UpdateBook(UpdateBookDTO dto)
         {
-            bool types = await _bookServe.UpdateBooksAsync(dto);
-            if (!types)
+            bool result = await _bookServe.UpdateBooksAsync(dto);
+            if (!result)
             {
                 return JsonFailt("修改失败");
             }
-            return JsonSuccess("删修改功", types);
+            return JsonSuccess("删修改功");
+        }
+        /// <summary>
+        /// 新增书籍
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [AppAuthorize(AppTypes.Background)]
+        public async Task<IActionResult> CreatesBook(List<CreateBookDTO> dto)
+        {
+            bool result = await _bookServe.CreateBooksAsync(dto);
+            if (!result)
+            {
+                return JsonFailt("添加失败");
+            }
+            return JsonSuccess("添加成功");
+        }
+        /// <summary>
+        /// 通过Excel导入书籍
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> ImportBooks(IFormFile file)
+        {
+            var result =await _bookServe.ImportBooksAsync(file.OpenReadStream());
+            return JsonResult(result.Item1,result.Item2);
         }
     }
 }

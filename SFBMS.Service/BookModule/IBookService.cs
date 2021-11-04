@@ -2,24 +2,19 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
+
 
 namespace SFBMS.Service.BookModule
 {
     public interface IBookService
     {
-        /// <summary>
-        /// 获取书籍列表
-        /// </summary>
-        /// <param name="dto"></param>
-        /// <returns></returns>
         Task<BookOutDTO> GetBookListAsync(SelectBookDTO dto);
-        /// <summary>
-        /// 获取书籍类型列表
-        /// </summary>
-        /// <returns></returns>
         Task<IList<BookTypeDTO>> GetBookTypeListAsync();
         Task<bool> DeleteBooksAsync(int[] bookIds);
         Task<bool> UpdateBooksAsync(UpdateBookDTO dto);
+        Task<bool> CreateBooksAsync(List<CreateBookDTO> dto);
+        Task<(bool, string)> ImportBooksAsync(Stream stream);
     }
 }

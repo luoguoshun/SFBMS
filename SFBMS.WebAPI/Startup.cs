@@ -21,6 +21,7 @@ using Microsoft.OpenApi.Models;
 using NLog.Extensions.Logging;
 using SFBMS.Common.CatchResource;
 using SFBMS.Common.CatchResource.Implement;
+using SFBMS.Common.DocumentHelper;
 using SFBMS.Common.EnumList;
 using SFBMS.Common.SiteConfig;
 using SFBMS.Entity.Context;
@@ -80,7 +81,7 @@ namespace SFBMSAPI
             typeof(AppTypes).GetEnumNames().ToList().ForEach(Version =>
             {
                 options.SwaggerEndpoint($"/swagger/{Version}/swagger.json", $"版本选择:{Version}");
-                //路径awagger访问配置，设置为空，表示直接在根域名（localhost:8001）访问该文件,
+                //路径awagger访问配置，设置为空，表示直接在根域名（127.0.0.1:36779）访问该文件
                 options.RoutePrefix = string.Empty;
             })
             );
@@ -127,7 +128,7 @@ namespace SFBMSAPI
                 container.RegisterType<PolicyHandler>().As<IAuthorizationHandler>().SingleInstance();
                 container.RegisterType<SFBMSContext>().As<DbContext>().AsImplementedInterfaces();
                 container.RegisterType<HotNews>().As<IHotNews>().AsImplementedInterfaces();
-
+                container.RegisterType<Spreadsheet>().AsImplementedInterfaces();
                 //container.RegisterType<ChatHub>().As<Hub>().SingleInstance();
                 //container.RegisterType<ChatClientServer>().As<IChatClientServer>().AsImplementedInterfaces();
 
@@ -136,9 +137,8 @@ namespace SFBMSAPI
                 var repositoryDllFile = Path.Combine(AppContext.BaseDirectory, "SFBMS.Repository.dll");
                 if (!(File.Exists(servicesDllFile) || File.Exists(repositoryDllFile)))
                 {
-                    var msg = "Repository.dll和service.dll 可能丢失!!检查 bin 文件夹，并拷贝。";
-                    //Log4NetHelper.LogErr(msg);
-                    throw new Exception(msg);
+                    string msg = "Repository.dll和service.dll 可能丢失!!检查 bin 文件夹，并拷贝。";
+                    Console.WriteLine($"服务注入:{msg}");
                 }
                 //RegisterAssemblyTypes()在程序集中注册所有类型。返回结果: 注册生成器，允许配置注册。
                 //AsImplementedInterfaces()指定将已扫描程序集中的类型注册为提供所有
@@ -148,9 +148,6 @@ namespace SFBMSAPI
                           .AsImplementedInterfaces()
                           .InstancePerLifetimeScope()
                           .EnableInterfaceInterceptors();
-
-                container.RegisterAssemblyTypes(Assembly.LoadFrom(repositoryDllFile))
-                          .InstancePerLifetimeScope();
                 #endregion
             }
         }
