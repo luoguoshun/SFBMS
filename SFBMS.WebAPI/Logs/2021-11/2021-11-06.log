@@ -1,0 +1,584 @@
+     时间: 2021-11-06 12:35:39.9675
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:35:40.0115
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:35:40.0115
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:35:40.0233
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:36:17.9687
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:36:18.1042
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:45:09.5490
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:45:09.5878
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:45:09.5878
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:45:09.5878
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:45:31.5319
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 12:45:31.6459
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:05:07.9506
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:05:07.9879
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:05:07.9943
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:05:07.9943
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:05:15.3098
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:05:15.4202
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:07:03.9083
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: String '1933' was not recognized as a valid DateTime.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:10:07.0551
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:10:07.0908
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:10:07.0908
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:10:07.0908
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:10:51.9827
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:10:52.0791
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:10:52.7145
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: String '1933/0/0' was not recognized as a valid DateTime.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:13:19.9221
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:13:19.9599
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:13:19.9599
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:13:19.9599
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:13:43.2888
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:13:43.3853
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:13:46.8657
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: String '12055' was not recognized as a valid DateTime.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:16:07.9958
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: String '12055' was not recognized as a valid DateTime.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:24:18.9126
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:24:18.9484
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:24:18.9484
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:24:18.9484
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:25:07.9070
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:25:08.0049
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:26:38.0776
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: String '12055' was not recognized as a valid DateTime.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:35:47.3969
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: Input string was not in a correct format.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:35:57.3409
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: Input string was not in a correct format.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:36:38.3265
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: Input string was not in a correct format.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:38:02.3949
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: Input string was not in a correct format.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:43:36.4663
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:43:36.5049
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:43:36.5115
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:43:36.5115
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:45:46.9066
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:45:46.9430
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:45:46.9495
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:45:46.9495
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:45:59.1688
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:45:59.2905
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:56:37.0190
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:56:37.0563
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:56:37.0563
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:56:37.0563
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:57:05.1272
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:57:05.2509
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:58:09.0301
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:58:09.0674
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:58:09.0739
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:58:09.0739
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:58:13.9515
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 13:58:14.0858
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 14:03:27.5722
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 14:03:27.6160
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 14:03:27.6160
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 14:03:27.6160
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 14:03:35.6647
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-06 14:03:35.7951
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

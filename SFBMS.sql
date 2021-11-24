@@ -2,8 +2,8 @@ create database SFBMS
 use SFBMS
 ---------
 create table AdminInfo(
-AdminNo varchar(125) primary key not null,
-[Name] varchar(125),
+AdminNo varchar(20) primary key not null,
+[Name] varchar(20),
 [Password] varchar(125),
 Sex int,
 )
@@ -19,23 +19,27 @@ CREATE TABLE [dbo].[NLogInfo](
 )
 insert into NLogInfo([Date],[origin],[Level],[Message],[Detail]) values (getdate(),'', 'Information', 'Test','')
 select * from [NLogInfo]
+
 create table ClientInfo(
-ClientNo int primary key identity(1,1),
-[Name] varchar(125),
+ClientNo varchar(20) primary key ,
+[Name] varchar(20),
 [Password] varchar(125),
 Sex int,
 IdNumber varchar(225),--身份证
 BirthDate datetime,
 [Address] varchar(255),
 Phone varchar(125),
-Flag int,
+[State] int,--是否开启用户 1开启 0关闭
+HeaderImgSrc varchar(125),
+CreateTime datetime ,--添加时间
 )
-insert into ClientInfo values('张三','123456',1,452723199904202457,'1999.4.20','广西罗城仫佬族自治县','1587291189',1)
-insert into ClientInfo values('李四','123456',1,452723199008202457,'1900.8.20','广西罗城仫佬族自治县','1587291189',1)
-
+insert into ClientInfo values('13900326','张三','123456',1,452723199904202457,'1999.4.20','广西罗城仫佬族自治县','1587291189',1,'/src/Client/HeaderImg/高清头像1.jpg',getdate())
+insert into ClientInfo values('19300126','李四','123456',1,452723199008202457,'1900.8.20','广西罗城仫佬族自治县','1587291189',1,'/src/Client/HeaderImg/高清头像2.jpg',getdate())
+select *from ClientInfo
+delete from ClientInfo
 ----
 create table RoleInfo(
-Id int primary key identity(1,1),
+RoleId int primary key identity(1,1),
 [Name] varchar(125) not null,
 Descripcion varchar(125)
 )
@@ -47,14 +51,16 @@ insert into RoleInfo values('普通用户','')
 select *from RoleInfo
 ------------
 create table User_Role(
-Id int identity(1,1),
-UserId varchar(125) not null,
+UserId varchar(20) not null,
 RoleId int  not null
 )
 ALTER TABLE User_Role WITH NOCHECK ADD
 CONSTRAINT[PK_User_Role] PRIMARY KEY NONCLUSTERED(UserId,RoleId)
-insert into RoleInfo values('luo',1)
-
+insert into User_Role values('luo',1)
+insert into User_Role values('13900326',3)
+insert into User_Role values('13900326',4)
+insert into User_Role values('19300126',5)
+select *from User_Role
 ---书籍
 create table BookInfo(
 Id int primary key identity(1,1),
@@ -63,25 +69,26 @@ TypeId int ,
 Author varchar(125) ,
 Press  varchar(125),--出版社
 PublicationDate datetime,--出版年月
-Price int not null,
+Price float not null,
 Inventory int not null,--库存量
 Descripcion text,--书籍描述
-ImageSrc varchar(125),
+CoverImgSrc varchar(125),
+[State] int,--是否开启书籍 1开启 0关闭
 CreateTime datetime ,--添加时间
 )
-insert into BookInfo values('西游记',4,'吴承恩','','2021-07-10',39,10,
-'《西游记》是中国古代第一部浪漫主义章回体长篇神魔小说。现存明刊百回本《西游记》均无作者署名。清代学者吴玉搢等首先提出《西游记》作者是明代吴承恩。','',getdate())
-insert into BookInfo values('红楼梦',4,'曹雪芹','','2021-07-10',39,5,
+insert into BookInfo values('西游记',4,'吴承恩','未知','2021-07-10',39,10,
+'《西游记》是中国古代第一部浪漫主义章回体长篇神魔小说。现存明刊百回本《西游记》均无作者署名。清代学者吴玉搢等首先提出《西游记》作者是明代吴承恩。','/src/Book/images/西游记.jpg',1,getdate())
+insert into BookInfo values('红楼梦',4,'曹雪芹','未知','2021-07-10',39,5,
 '《红楼梦》，中国古代章回体长篇小说，中国古典四大名著之一，一般认为是清代作家曹雪芹所著。
 小说以贾、史、王、薛四大家族的兴衰为背景，以富贵公子贾宝玉为视角，以贾宝玉与林黛玉、薛宝钗的爱情婚姻悲剧为主线，
 描绘了一批举止见识出于须眉之上的闺阁佳人的人生百态，展现了真正的人性美和悲剧美，
-可以说是一部从各个角度展现女性美以及中国古代社会世态百相的史诗性著作。','',getdate())
-insert into BookInfo values('水浒传',4,'施耐庵','','2021-07-10',39,22,
-'《水浒传》是元末明初施耐庵（现存刊本署名大多有施耐庵、罗贯中两人中的一人，或两人皆有）编著的章回体长篇小说。','',getdate())
-insert into BookInfo values('三国演义',4,'罗贯中','','2021-07-10',39,30,
+可以说是一部从各个角度展现女性美以及中国古代社会世态百相的史诗性著作。','/src/Book/images/红楼梦.jpg',1,getdate())
+insert into BookInfo values('水浒传',4,'施耐庵','未知','2021-07-10',39,22,
+'《水浒传》是元末明初施耐庵（现存刊本署名大多有施耐庵、罗贯中两人中的一人，或两人皆有）编著的章回体长篇小说。','/src/Book/images/水浒传.jpg',1,getdate())
+insert into BookInfo values('三国演义',4,'罗贯中','未知','2021-07-10',39,30,
 '《三国演义》（全名为《三国志通俗演义》，又称《三国志演义》）是元末明初小说家罗贯中根据陈寿《三国志》和裴松之注解以及民间三国故事传说经过艺术加工创作而成的长篇章回体历史演义小说，
 与《西游记》《水浒传》《红楼梦》并称为中国古典四大名著。该作品成书后有嘉靖壬午本等多个版本传于世，
-到了明末清初，毛宗岗对《三国演义》整顿回目、修正文辞、改换诗文，该版本也成为诸多版本中水平最高、流传最广的版本。','',getdate())
+到了明末清初，毛宗岗对《三国演义》整顿回目、修正文辞、改换诗文，该版本也成为诸多版本中水平最高、流传最广的版本。','/src/Book/images/三国演义.jpg',1,getdate())
 select *from BookInfo
 
  create table BookType(
@@ -105,10 +112,9 @@ select *from BookInfo
  from BookInfo as b
  left join BookType as t on b.TypeId=b.TypeId
 
-
-
-
-
-
-
-
+ select c.ClientNo,c.Name,c.Sex,c.IdNumber,c.BirthDate,c.Address,c.Phone,c.State,c.CreateTime,
+ STRING_AGG(r.Name, '、') as RoleNames
+ from ClientInfo as c 
+ left join User_Role as ur on c.ClientNo = ur.UserId
+ left join RoleInfo as r on r.RoleId = ur.RoleId
+ GROUP BY c.ClientNo,c.Name,c.Sex,c.IdNumber,c.BirthDate,c.Address,c.Phone,c.State,c.CreateTime

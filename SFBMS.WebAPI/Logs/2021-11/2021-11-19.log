@@ -1,0 +1,8 @@
+     时间: 2021-11-19 17:52:02.7295
+     路由: http://127.0.0.1/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/GetBookList; 异常描述:The member row of type System.Text.Json.JsonElement cannot be used as a parameter value}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

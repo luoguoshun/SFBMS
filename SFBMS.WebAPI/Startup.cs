@@ -44,7 +44,6 @@ namespace SFBMSAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<SiteConfigHelper>();
             services.AddHttpClient();
             services.AddControllers();
             services.AddCustomSwagger()
@@ -53,6 +52,8 @@ namespace SFBMSAPI
                     .AddCusomException()
                     .AddIdentityservice(Configuration)
                     .AddTokenAuthentication(Configuration);
+
+            //services.AddScoped<Spreadsheet>();
         }
         /// <summary>
         /// 运行时调用，用于配置HTTP请求管道。
@@ -73,9 +74,9 @@ namespace SFBMSAPI
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-            app.UseMiddleware<GlobalExceptionMiddleware>();
+            app.UseMiddleware<MiddlewareExceptionFilter>();
 
-            #region 配置Swagger
+            #region Swagger
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             typeof(AppTypes).GetEnumNames().ToList().ForEach(Version =>
@@ -128,7 +129,7 @@ namespace SFBMSAPI
                 container.RegisterType<PolicyHandler>().As<IAuthorizationHandler>().SingleInstance();
                 container.RegisterType<SFBMSContext>().As<DbContext>().AsImplementedInterfaces();
                 container.RegisterType<HotNews>().As<IHotNews>().AsImplementedInterfaces();
-                container.RegisterType<Spreadsheet>().AsImplementedInterfaces();
+                container.RegisterType<Spreadsheet>().InstancePerLifetimeScope();
                 //container.RegisterType<ChatHub>().As<Hub>().SingleInstance();
                 //container.RegisterType<ChatClientServer>().As<IChatClientServer>().AsImplementedInterfaces();
 

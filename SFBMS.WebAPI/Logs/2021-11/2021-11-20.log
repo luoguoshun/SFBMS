@@ -1,0 +1,184 @@
+     时间: 2021-11-20 12:43:30.5046
+     路由: http://127.0.0.1/api/Background/Book/UpdateBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateBook; 异常描述:The collection type 'Microsoft.AspNetCore.Http.IHeaderDictionary' on 'Microsoft.AspNetCore.Http.IFormFile.Headers' is not supported.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 12:43:42.6581
+     路由: http://127.0.0.1/api/Background/Book/UpdateBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateBook; 异常描述:The collection type 'Microsoft.AspNetCore.Http.IHeaderDictionary' on 'Microsoft.AspNetCore.Http.IFormFile.Headers' is not supported.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 16:00:17.7663
+     路由: http://127.0.0.1/api/Background/Book/updateConverImage
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/updateConverImage; 异常描述:The collection type 'Microsoft.AspNetCore.Http.IHeaderDictionary' on 'Microsoft.AspNetCore.Http.IFormFile.Headers' is not supported.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 16:10:33.7550
+     路由: http://127.0.0.1/api/Background/Book/updateConverImage
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/updateConverImage; 异常描述:The collection type 'Microsoft.AspNetCore.Http.IHeaderDictionary' on 'Microsoft.AspNetCore.Http.IFormFile.Headers' is not supported.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 16:14:12.0926
+     路由: http://127.0.0.1/api/Background/Book/updateConverImage
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/updateConverImage; 异常描述:The method or operation is not implemented.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 16:27:04.5148
+     路由: http://127.0.0.1/api/Background/Book/updateConverImage
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/updateConverImage; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Books\images\15b6343c-b0df-4947-94d6-97eb8a5dbb19.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 16:40:37.1681
+     路由: http://127.0.0.1/api/Background/Book/updateConverImage
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/updateConverImage; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Books\images\0cb816ef-735c-4404-9fc3-9c44a51415e8.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 18:12:26.7495
+     路由: http://127.0.0.1/api/Background/Book/updateConverImage
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/updateConverImage; 异常描述:Object must implement IConvertible.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 18:15:19.0185
+     路由: http://127.0.0.1/api/Background/Book/updateConverImage
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/updateConverImage; 异常描述:Object must implement IConvertible.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:00:36.2133
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Books\images\184073063.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:02:48.9970
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Books\images\184073063.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:14:04.6778
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find a part of the path 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Books\images\'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:15:55.9159
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Access to the path 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Books\images' is denied.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:20:16.8773
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Access to the path 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images' is denied.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:22:43.0129
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images\184073063.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:26:51.3173
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images\0eca7c4d-9f20-438b-9bba-6800ceaf3998.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:54:42.2146
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images\西游记.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 22:56:21.0664
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images\西游记.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 23:11:51.8418
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images\西游记.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 23:16:40.0789
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images\西游记.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 23:34:52.9607
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images\西游记.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 23:35:52.4698
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:Could not find file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images西游记.jpg'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-20 23:44:45.8076
+     路由: http://127.0.0.1/api/Background/Book/UpdateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/UpdateAllBook; 异常描述:The process cannot access the file 'C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.WebAPI\wwwroot\Book\images\西游记.jpg' because it is being used by another process.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

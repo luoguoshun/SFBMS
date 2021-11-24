@@ -26,7 +26,7 @@ namespace SFBMS.WebAPI.Infrastructure.ExceptionsFilter
                 int sysId = 1;/*监控了ip方便定位到底是那台服务器出故障了*/
                 string ip = context.HttpContext.Connection.RemoteIpAddress.ToString();
                 string uri = context.HttpContext.Request.Path.Value;
-                string errorString = $"全局异常{{系统编号：{sysId};主机IP：{ip};异常Uri：{uri}; 异常描述：{ex.Message}}}";
+                string errorString = $"全局异常{{系统编号:{sysId};主机IP:{ip};异常接口:{uri}; 异常描述:{ex.Message}}}";
                 _logger.LogError(errorString);
                 context.Result = new JsonResult("Controller全局异常拦截：" + ex.Message);
             }

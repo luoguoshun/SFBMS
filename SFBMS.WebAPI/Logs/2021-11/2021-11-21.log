@@ -1,0 +1,167 @@
+     时间: 2021-11-21 13:50:07.3787
+     路由: http://127.0.0.1/api/Background/Book/ImportBooks
+     级别: Error
+     信息: The string '出版时间' was not recognized as a valid DateTime. There is an unknown word starting at index '0'.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 13:53:06.6445
+     路由: http://127.0.0.1/api/Background/Book/ImportBooks
+     级别: Error
+     信息: String '10228' was not recognized as a valid DateTime.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 15:54:29.8893
+     路由: http://localhost/api/Background/Role/GetRoleList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Role/GetRoleList; 异常描述:An exception was thrown while activating SFBMS.Service.SystemModule.Implement.RoleService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 15:56:51.2260
+     路由: http://localhost/api/Background/Role/GetRoleList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Role/GetRoleList; 异常描述:An exception was thrown while activating SFBMS.Service.SystemModule.Implement.RoleService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 15:56:55.4882
+     路由: http://localhost/api/Background/Role/GetRoleList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Role/GetRoleList; 异常描述:An exception was thrown while activating SFBMS.Service.SystemModule.Implement.RoleService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 15:59:21.5734
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:“.”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:01:58.0241
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:“.”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:02:30.1890
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:列名 'RoleName' 无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:05:15.5229
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:列名 'Name' 无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:09:03.1283
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:对象名 'RoleIno' 无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:09:53.7313
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:列名 'RoleId' 无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:12:24.3704
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:列名 'RoleId' 无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:30:37.2417
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:“group_concat”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:41:12.6832
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:“group_concat”附近有语法错误。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 16:41:17.2158
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:“group_concat”附近有语法错误。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 17:04:20.0483
+     路由: http://127.0.0.1/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Client/GetClientList; 异常描述:必须声明标量变量 "@Conditions"。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 17:05:31.4371
+     路由: http://127.0.0.1/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Client/GetClientList; 异常描述:必须声明标量变量 "@Conditions"。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 17:55:33.2618
+     路由: http://127.0.0.1/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Client/GetClientList; 异常描述:“r”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 17:55:33.7128
+     路由: http://127.0.0.1/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Client/GetClientList; 异常描述:“r”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-21 18:04:22.2605
+     路由: http://127.0.0.1/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/GetBookList; 异常描述:列名 'CoverImgSrc' 无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

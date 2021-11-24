@@ -10,8 +10,11 @@ namespace SFBMS.Common.Extentions
         public static T GetClaimValue<T>(this ClaimsPrincipal claimsPrincipal, string type)
         {
             var claim = claimsPrincipal.FindFirst(type);
-            if (claim == null) return default;
-            return (T)Convert.ChangeType(claim.Value, typeof(T));
+            if (claim != null)
+            {
+                return (T)Convert.ChangeType(claim.Value, typeof(T));
+            }
+            return default;
         }
         /// <summary>
         /// 获取具有指定声明类型的所有声明

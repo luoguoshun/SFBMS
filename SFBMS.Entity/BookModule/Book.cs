@@ -20,7 +20,7 @@ namespace SFBMS.Entity.BookModule
         public string Author { get; set; }
         public string Press { get; set; }
         public DateTime PublicationDate { get; set; }
-        public int Price { get; set; }
+        public double Price { get; set; }
         /// <summary>
         /// 库存量
         /// </summary>
@@ -29,7 +29,8 @@ namespace SFBMS.Entity.BookModule
         /// <summary>
         /// 封面地址
         /// </summary>
-        public string ImageSrc { get; set; }
-        public DateTime CreateTime { get; set; }        
+        public string CoverImgSrc { get; set; }
+        public int State { get; set; }
+        public DateTime CreateTime { get; set; }
     }
 }

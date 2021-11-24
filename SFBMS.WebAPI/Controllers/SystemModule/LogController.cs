@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OHEXML.Infrastructure.Attributes;
+using SFBMS.Common.Algorithm;
 using SFBMS.Common.EnumList;
 using SFBMS.Contracts.LogModule;
 using SFBMS.Service.SystemModule;
@@ -31,11 +32,7 @@ namespace SFBMS.WebAPI.Controllers.SystemModule
         public async Task<IActionResult> GetLogList(SelectLogDTO dto)
         {
             var logs = await _logService.GetLogListAsync(dto);
-            if (logs is null)
-            {
-                return JsonFailt("");
-            }
-            return JsonSuccess("", logs);
+            return JsonSuccess(logs);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SFBMS.Entity.ClientModule;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,10 +9,10 @@ namespace SFBMS.Entity.SystemModule
 {
     [Table("User_Role")]
     public class UserRole
-    {
-        [Key]
-        public int Id { get; set; }
+    {  
         public int RoleId { get; set; }
-        public string UserId { get; set; }
+        public string UserId { get; set; }  
+        public RoleInfo Role { get; set; }
+        public Client Client { get;set; }
     }
 }

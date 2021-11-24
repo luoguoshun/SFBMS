@@ -27,8 +27,8 @@ namespace SFBMS.Entity.Context
             modelBuilder
               .LoadEntityConfiguration<SFBMSContext>()
               .AddEntityTypes<BaseEntity>();
-            //在程序集中(SFBMS.Entity)实现 IEntityTypeConfiguration 的类型中指定的所有配置
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.Load("SFBMS.Entity"));
+            //在程序集中(SFBMS.Entity)实现 IEntityTypeConfiguration 类型的指定所有配置
+            //modelBuilder.ApplyConfigurationsFromAssembly(Assembly.Load("SFBMS.Entity"));
         }
     }
 }

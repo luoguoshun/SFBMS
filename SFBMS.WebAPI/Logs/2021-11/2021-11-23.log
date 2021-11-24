@@ -1,0 +1,24 @@
+     时间: 2021-11-23 22:23:13.7769
+     路由: http://127.0.0.1/api/Background/Client/updateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Client/updateAllBook; 异常描述:Invalid cast from 'System.String' to 'SFBMS.Common.EnumList.Sex'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-23 22:25:30.6672
+     路由: http://127.0.0.1/api/Background/Client/updateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Client/updateAllBook; 异常描述:Invalid cast from 'System.String' to 'SFBMS.Common.EnumList.Sex'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-23 22:42:27.1291
+     路由: http://127.0.0.1/api/Background/Client/updateAllBook
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Client/updateAllBook; 异常描述:Invalid cast from 'System.Int32' to 'SFBMS.Common.EnumList.Sex'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

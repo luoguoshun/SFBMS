@@ -1,0 +1,25 @@
+     时间: 2021-11-16 17:01:56.2185
+     路由: http://localhost/api/Background/Log/GetLogList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Log/GetLogList; 异常描述:Index was outside the bounds of the array.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-16 17:03:00.6318
+     路由: http://localhost/api/Background/Log/GetLogList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Log/GetLogList; 异常描述:Index was outside the bounds of the array.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-16 17:03:19.6127
+     路由: http://localhost/api/Background/Log/GetLogList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Log/GetLogList; 异常描述:无法绑定由多个部分组成的标识符 "l.Level"。
+无法绑定由多个部分组成的标识符 "l.Message"。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

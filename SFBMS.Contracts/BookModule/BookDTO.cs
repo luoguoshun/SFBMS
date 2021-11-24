@@ -1,11 +1,14 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using SFBMS.Common.SiteConfig;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace SFBMS.Contracts.BookModule
 {
     /// <summary>
-    /// 查询模型
+    /// 输出模型
     /// </summary>
     public class BookDTO
     {
@@ -16,7 +19,7 @@ namespace SFBMS.Contracts.BookModule
         public string Author { get; set; }
         public string Press { get; set; }
         public DateTime PublicationDate { get; set; }
-        public int Price { get; set; }
+        public float Price { get; set; }
         /// <summary>
         /// 库存量
         /// </summary>
@@ -25,13 +28,15 @@ namespace SFBMS.Contracts.BookModule
         /// <summary>
         /// 封面地址
         /// </summary>
-        public string ImageSrc { get; set; }
+        public string CoverImgSrc { get; set; }
+        public string ImageUrl => SiteConfigHelper.GetSectionValue("BaseUrl") + CoverImgSrc;
+        public int State { get; set; }
         public DateTime CreateTime { get; set; }
 
     }
     public class BookOutDTO
     {
-        public IEnumerable<BookDTO> books { get; set; }
+        public IEnumerable<BookDTO> Books { get; set; }
         public int Count { get; set; }
     }
     /// <summary>
@@ -39,10 +44,11 @@ namespace SFBMS.Contracts.BookModule
     /// </summary>
     public class SelectBookDTO
     {
-        public string BookName { get; set; }
-        public string Author { get; set; }
+        public int Row { get; set; }
+        public int Page { get; set; }
+        public string Conditions { get; set; }
         public int TypeId { get; set; }
-        public string[] PublicationDates { get; set; }
+        public string[] PublicationDates { get; set; }      
     }
     /// <summary>
     /// 删除模型
@@ -60,12 +66,13 @@ namespace SFBMS.Contracts.BookModule
         public string BookName { get; set; }
         public int TypeId { get; set; }
         public DateTime PublicationDate { get; set; }
-        public int Price { get; set; }
+        public float Price { get; set; }
         /// <summary>
         /// 库存量
         /// </summary>
         public int Inventory { get; set; }
         public string Descripcion { get; set; }
+        public int State { get; set; }
     }
     public class BookTypeDTO
     {
@@ -82,7 +89,7 @@ namespace SFBMS.Contracts.BookModule
         public string Author { get; set; }
         public string Press { get; set; }
         public DateTime PublicationDate { get; set; }
-        public int Price { get; set; }
+        public float Price { get; set; }
         /// <summary>
         /// 库存量
         /// </summary>
@@ -92,5 +99,26 @@ namespace SFBMS.Contracts.BookModule
         /// 封面地址
         /// </summary>
         public string ImageSrc { get; set; }
+    }
+    /// <summary>
+    /// 导入数据模型
+    /// </summary>
+    public class ImportBookDTO
+    {
+        public string BookName { get; set; }
+        public string TypeName { get; set; }
+        public string Author { get; set; }
+        public string Press { get; set; }
+        public DateTime PublicationDate { get; set; }      
+        /// <summary>
+        /// 数量
+        /// </summary>
+        public int Inventory { get; set; }
+        public float Price { get; set; }
+        /// <summary>
+        /// 字数
+        /// </summary>
+        public int WordNumber { get; set; }
+        public string Descripcion { get; set; }
     }
 }

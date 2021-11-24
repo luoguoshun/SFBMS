@@ -14,8 +14,7 @@ namespace SFBMS.Repository.SystemModule.Implement
     public class LogRepository : Repository<NLogInfo>, ILogRepository
     {
         public LogRepository(SFBMSContext dbContext) : base(dbContext)
-        {
-            
+        {           
         }
         /// <summary>
         /// 获取日志列表
@@ -52,7 +51,7 @@ namespace SFBMS.Repository.SystemModule.Implement
                      Where {where}", paramters),
                     Count = await connection.QueryFirstOrDefaultAsync<int>($@"
                      select COUNT(*)
-                     from NLogInfo as c              
+                     from NLogInfo as l              
                      Where {where}", paramters)
                 };
                 return data;

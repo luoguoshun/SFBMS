@@ -1,0 +1,352 @@
+     时间: 2021-11-04 23:38:19.9999
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:38:20.0895
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:38:20.1133
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:38:20.1176
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:38:27.3672
+     路由: http://localhost/swagger/Background/swagger.json
+     级别: Error
+     信息: 中间件抓捕异常{系统编号:1;主机IP:::1;异常接口:/swagger/Background/swagger.json; 异常描述:Ambiguous HTTP method for action - SFBMS.WebAPI.Controllers.BookModule.BookController.ImportBooks (SFBMS.WebAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:38:51.5449
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:38:51.6114
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:38:51.6227
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:38:51.6227
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:39:51.9199
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:39:52.1016
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:39:52.4583
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/ImportBooks; 异常描述:An exception was thrown while activating SFBMS.Service.BookModule.Implement.BookService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:40:23.5952
+     路由: http://127.0.0.1/connect/token
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:40:26.3016
+     路由: http://127.0.0.1/connect/token
+     级别: Info
+     信息: Token request validation success, {"ClientId":"Sunflower", "GrantType":"password", "Scopes":"background client", "UserName":"luo", "Raw":{"grant_type":"password","username":"luo","password":"***REDACTED***","scope":"client background","client_id":"Sunflower","client_secret":"***REDACTED***"}}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:41:03.1757
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:An exception was thrown while activating SFBMS.Service.BookModule.Implement.BookService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:49:48.7726
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:49:48.8531
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:49:48.8673
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:49:48.8673
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:50:06.7475
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:50:07.0206
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:50:07.2896
+     路由: http://localhost/api/Background/Book/ImportBooks
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/ImportBooks; 异常描述:An exception was thrown while activating SFBMS.Service.BookModule.Implement.BookService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:55:40.9861
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:55:41.0533
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:55:41.0533
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:55:41.0533
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:55:47.6802
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:55:47.8569
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:56:05.8537
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:An exception was thrown while activating SFBMS.Service.BookModule.Implement.BookService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:56:08.0528
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:An exception was thrown while activating SFBMS.Service.BookModule.Implement.BookService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:57:40.0763
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:57:40.1279
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:57:40.1392
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:57:40.1392
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:57:52.2110
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:57:52.4650
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:57:52.8793
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:An exception was thrown while activating SFBMS.Service.BookModule.Implement.BookService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:59:12.3627
+     路由: 
+     级别: Info
+     信息: Starting IdentityServer4 version 3.1.4.0
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:59:12.4395
+     路由: 
+     级别: Info
+     信息: You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:59:12.4488
+     路由: 
+     级别: Info
+     信息: Using the default authentication scheme Bearer for IdentityServer
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:59:12.4488
+     路由: 
+     级别: Info
+     信息: Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:59:29.2244
+     路由: http://127.0.0.1/.well-known/openid-configuration
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:59:29.4400
+     路由: http://127.0.0.1/.well-known/openid-configuration/jwks
+     级别: Info
+     信息: Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-04 23:59:29.7297
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:An exception was thrown while activating SFBMS.Service.BookModule.Implement.BookService.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

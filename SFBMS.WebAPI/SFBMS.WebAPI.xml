@@ -9,21 +9,6 @@
             获取Api上下文
             </summary>
         </member>
-        <member name="M:SFBMS.WebAPI.Controllers.Base.BaseController.JsonSuccess(System.String,System.Object)">
-            <summary>
-            定义成功的返回值
-            </summary>
-            <param name="message"></param>
-            <param name="data"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SFBMS.WebAPI.Controllers.Base.BaseController.JsonFailt(System.String)">
-            <summary>
-            定义失败的返回值
-            </summary>
-            <param name="message"></param>
-            <returns></returns>
-        </member>
         <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.GetBookList(SFBMS.Contracts.BookModule.SelectBookDTO)">
             <summary>
             获取书籍列表
@@ -44,11 +29,19 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
-        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.UpdateBook(SFBMS.Contracts.BookModule.UpdateBookDTO)">
+        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.UpdateSectionBook(SFBMS.Contracts.BookModule.UpdateBookDTO)">
             <summary>
-            修改书籍
+            修改部分书籍信息
             </summary>
             <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.UpdateAllBook">
+            <summary>
+            修改全部书籍信息
+            </summary>
+            <param name="file"></param>
+            <param name="bookId">s书籍编号</param>
             <returns></returns>
         </member>
         <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.CreatesBook(System.Collections.Generic.List{SFBMS.Contracts.BookModule.CreateBookDTO})">
@@ -58,9 +51,44 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
+        <member name="M:SFBMS.WebAPI.Controllers.BookModule.BookController.ImportBooks(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            通过Excel导入书籍
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
         <member name="M:SFBMS.WebAPI.Controllers.ClientModule.ClientController.GetClientList(SFBMS.Contracts.ClientModule.SelectClientDTO)">
             <summary>
             获取用户列表
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.ClientModule.ClientController.CreateClient(SFBMS.Contracts.ClientModule.CreateClientDTO)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.ClientModule.ClientController.UpdateSectionClient(SFBMS.Contracts.ClientModule.UpdateClientDTO)">
+            <summary>
+            修改用户部分数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.ClientModule.ClientController.UpdateAllBook">
+            <summary>
+            修改用户全部数据
+            </summary>
+            <param name="file"></param>
+            <param name="bookId">s书籍编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Controllers.ClientModule.ClientController.DeleteClients(SFBMS.Contracts.ClientModule.DeleteClientDTO)">
+            <summary>
+            删除用户
             </summary>
             <param name="dto"></param>
             <returns></returns>
@@ -71,19 +99,25 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:SFBMS.WebAPI.Controllers.SystemModule.RoleController.GetRoleList">
+            <summary>
+            获取角色列表
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:SFBMS.WebAPI.Infrastructure.PolicyHelper.PolicyHandler">
             <summary>
             自定义权限控制类(通过继承 AuthorizationHandler 来实现我们的授权逻辑)
             </summary>
         </member>
-        <member name="T:SFBMS.WebAPI.Infrastructure.ExceptionsFilter.GlobalExceptionMiddleware">
-            <summary>
-            全局异常拦截器 GlobalExceptionsFilter无法拦截的在此拦截
-            </summary>
-        </member>
         <member name="T:SFBMS.WebAPI.Infrastructure.ExceptionsFilter.GlobalExceptionsFilter">
             <summary>
             全局异常处理过滤器(只能管到Controller而已 之外的异常无法捕获)
+            </summary>
+        </member>
+        <member name="T:SFBMS.WebAPI.Infrastructure.ExceptionsFilter.MiddlewareExceptionFilter">
+            <summary>
+            全局异常拦截器 GlobalExceptionsFilter无法拦截的在此拦截
             </summary>
         </member>
         <member name="P:SFBMS.WebAPI.Infrastructure.IdentityServer4.Config.ApiSources">

@@ -6,6 +6,7 @@ namespace SFBMS.Common.EnumList
 {
     public enum BookTypes
     {
+        未知 = 0,
         言情 = 1,
         悬疑 = 2,
         科技 = 3,
@@ -15,6 +16,6 @@ namespace SFBMS.Common.EnumList
         农业 = 7,
         植物 = 8,
         感情 = 9,
-        励志 = 10, 
+        励志 = 10,
     }
 }

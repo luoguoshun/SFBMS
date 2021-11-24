@@ -1,0 +1,35 @@
+     时间: 2021-11-22 13:41:27.6870
+     路由: http://localhost/api/Background/Client/GetClientList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/GetClientList; 异常描述:The ConnectionString property has not been initialized.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-22 22:06:30.3089
+     路由: http://127.0.0.1/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-22 22:06:32.1228
+     路由: http://127.0.0.1/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-22 22:07:07.2385
+     路由: http://127.0.0.1/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:127.0.0.1;异常接口:/api/Background/Book/GetBookList; 异常描述:“.”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

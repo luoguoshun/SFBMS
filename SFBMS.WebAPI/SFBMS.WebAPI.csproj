@@ -37,6 +37,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\CatchResource\images\" />
     <Folder Include="wwwroot\CatchResource\Movie\" />
+    <Folder Include="wwwroot\Client\HeaderImg\" />
   </ItemGroup>
 
   <ItemGroup>

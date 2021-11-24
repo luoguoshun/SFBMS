@@ -1,0 +1,32 @@
+     时间: 2021-11-08 00:00:48.1002
+     路由: http://localhost/api/Background/Client/CreateClient
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/CreateClient; 异常描述:An error occurred while updating the entries. See the inner exception for details.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-08 00:04:31.8136
+     路由: http://localhost/api/Background/Client/CreateClient
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/CreateClient; 异常描述:An error occurred while updating the entries. See the inner exception for details.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-08 00:22:48.3477
+     路由: http://localhost/api/Background/Client/CreateClient
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/CreateClient; 异常描述:Cannot use table 'User_Role' for entity type 'UserRole' since it is being used for entity type 'ClientUserRole (Dictionary<string, object>)' and potentially other entity types, but there is no linking relationship. Add a foreign key to 'UserRole' on the primary key properties and pointing to the primary key on another entity typed mapped to 'User_Role'.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-08 12:45:30.8872
+     路由: http://localhost/api/Background/Client/CreateClient
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/CreateClient; 异常描述:An error occurred while updating the entries. See the inner exception for details.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
+using SFBMS.Common.SiteConfig;
 using SFBMS.Entity.Base;
 using SFBMS.Entity.Context;
 using System;
@@ -23,33 +24,22 @@ namespace SFBMS.Repository.Base
         /// EF上下文
         /// </summary>
         protected SFBMSContext _dbContext;
-
-        public Repository(SFBMSContext dbContext)
-        {
-            _dbContext = dbContext;
-        }
-
         /// <summary>
         /// 事务
         /// </summary>
-        protected IDbContextTransaction _Transaction { get; set; }
+        protected IDbContextTransaction _transaction { get; set; }
         /// <summary>
         /// 数据库连接字符串
         /// </summary>
-        protected string ConnectionString
+        protected string ConnectionString => SiteConfigHelper.GetSectionValue("ConnectionStrings:SFBMSConnection");
+        public Repository(SFBMSContext dbContext)
         {
-            get
-            {
-                var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json");
-                return builder.Build().GetConnectionString("SFBMSConnection");
-            }
-        }
+            _dbContext = dbContext;
+        }              
         public Repository(SFBMSContext dbContext, IDbContextTransaction transaction)
         {
             _dbContext = dbContext;
-            _Transaction = transaction;
+            _transaction = transaction;
         }
 
         #region 添加
@@ -169,9 +159,9 @@ namespace SFBMS.Repository.Base
         public async Task BeginTransactionAsync()
         {
             await _dbContext.Database.BeginTransactionAsync();
-            if (_Transaction is null)
+            if (_transaction is null)
             {
-                _Transaction = await _dbContext.Database.BeginTransactionAsync();
+                _transaction = await _dbContext.Database.BeginTransactionAsync();
             }
         }
         /// <summary>
@@ -180,11 +170,11 @@ namespace SFBMS.Repository.Base
         /// <returns></returns>
         public bool CommitTransaction()
         {
-            if (_Transaction is null)
+            if (_transaction is null)
             {
                 return false;
             }
-            _Transaction.Commit();
+            _transaction.Commit();
             return true;
         }
         /// <summary>
@@ -192,9 +182,9 @@ namespace SFBMS.Repository.Base
         /// </summary>
         public void RollbackTransaction()
         {
-            if (_Transaction != null)
+            if (_transaction != null)
             {
-                _Transaction.Rollback();
+                _transaction.Rollback();
             }
         }
         /// <summary>

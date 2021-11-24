@@ -29,15 +29,12 @@ namespace SFBMS.Repository.BookModule.Implement
             {
                 DynamicParameters paramters = new DynamicParameters();
                 StringBuilder where = new StringBuilder("1=1");
-                if (!string.IsNullOrWhiteSpace(dto.BookName))
+                if (!string.IsNullOrWhiteSpace(dto.Conditions))
                 {
-                    where.Append(" and b.BookName like @BookName ");
-                    paramters.Add("BookName", $@"%{dto.BookName}%");
-                }
-                if (!string.IsNullOrWhiteSpace(dto.Author))
-                {
-                    where.Append(" and b.Author like @Author ");
-                    paramters.Add("Author", $@"%{dto.Author}%");
+                    where.Append(" and b.BookName like @BookName or b.Author like @Author or b.Descripcion like @Descripcion ");
+                    paramters.Add("BookName", $@"%{dto.Conditions}%");
+                    paramters.Add("Author", $@"%{dto.Conditions}%");
+                    paramters.Add("Descripcion", $@"%{dto.Conditions}%");
                 }
                 if (!(dto.TypeId is 0))
                 {
@@ -50,14 +47,18 @@ namespace SFBMS.Repository.BookModule.Implement
                     paramters.Add("BeginTime", dto.PublicationDates[0]);
                     paramters.Add("EndTime", dto.PublicationDates[1]);
                 }
+                paramters.Add("row", dto.Row);
+                paramters.Add("page", dto.Page);
                 BookOutDTO result = new BookOutDTO
                 {
-                    books = await connection.QueryAsync<BookDTO>($@"
-                     select b.Id,b.BookName,b.Author,b.Press,b.PublicationDate,b.Price,b.Inventory,b.Descripcion,
+                    Books = await connection.QueryAsync<BookDTO>($@"
+                     select b.Id,b.BookName,b.Author,b.Press,b.PublicationDate,b.Price,b.Inventory,b.CoverImgSrc,b.Descripcion,b.State,
                      t.TypeId,t.TypeName
                      from BookInfo as b
                      left join BookType as t on b.TypeId=t.TypeId
-                     Where {where}", paramters),
+                     Where {where}
+                     order by b.Id asc
+                     offset @row * (@page - 1) rows fetch next @row rows only", paramters),
                     Count = await connection.QueryFirstOrDefaultAsync<int>($@"
                      select COUNT(*)
                      from BookInfo as b 

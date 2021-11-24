@@ -18,7 +18,6 @@ namespace SFBMS.Common.DocumentHelper
         {
             _logger = logger;
         }
-
         /// <summary>
         /// 从文本流中打开
         /// </summary>
@@ -53,14 +52,14 @@ namespace SFBMS.Common.DocumentHelper
             {
                 List<TClasas> data = new List<TClasas>();
                 Sheet sheet = document.WorkbookPart.Workbook.GetFirstChild<Sheets>().Elements<Sheet>().FirstOrDefault();
-                if (sheet == null)
+                if (sheet is null)
                 {
                     return (null, "找不到文件");
                 }
                 WorksheetPart worksheetPart = (WorksheetPart)document.WorkbookPart.GetPartById(sheet.Id.Value);
                 Worksheet worksheet = worksheetPart.Worksheet;
                 //获取所有行
-                List<Row> rows = worksheet.Descendants<SheetData>().First().Descendants<Row>().ToList();
+                List<Row> rows = worksheet.Descendants<SheetData>().FirstOrDefault().Descendants<Row>().ToList();
                 for (int i = 1; i < rows.Count; i++)
                 {
                     int cellIndex = 0;
@@ -77,7 +76,7 @@ namespace SFBMS.Common.DocumentHelper
                             if (cell.DataType != null && cell.DataType.Value == CellValues.SharedString)
                             {
                                 SharedStringTablePart shareStringTablePart = document.WorkbookPart.SharedStringTablePart;
-                                if (shareStringTablePart == null)
+                                if (shareStringTablePart is null)
                                 {
                                     return (null, "找不到共享字符串");
                                 }
@@ -108,7 +107,7 @@ namespace SFBMS.Common.DocumentHelper
                                     break;
                             }
                         }
-                        object value = Convert.ChangeType(text, properties[cellIndex].PropertyType);
+                        object value = Convert.ChangeType(text, properties[cellIndex].PropertyType);                       
                         properties[cellIndex].SetValue(baseC, value, null);
                         cellIndex++;
                     }

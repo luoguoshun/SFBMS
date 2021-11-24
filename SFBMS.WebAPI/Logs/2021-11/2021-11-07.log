@@ -1,0 +1,24 @@
+     时间: 2021-11-07 23:15:24.3225
+     路由: http://localhost/api/Background/Client/CreateClient
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/CreateClient; 异常描述:Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-07 23:19:28.5500
+     路由: http://localhost/api/Background/Client/CreateClient
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/CreateClient; 异常描述:An error occurred while updating the entries. See the inner exception for details.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-07 23:19:36.0688
+     路由: http://localhost/api/Background/Client/CreateClient
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Client/CreateClient; 异常描述:An error occurred while updating the entries. See the inner exception for details.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
