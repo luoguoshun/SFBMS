@@ -8,5 +8,6 @@ namespace SFBMS.Repository.BookModule
 {
     public interface IBookTypeRepository : IRepository<BookType>
     {
+
     }
 }

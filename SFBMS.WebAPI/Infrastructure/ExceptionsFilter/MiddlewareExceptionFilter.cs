@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using SFBMS.Contracts.SystemModule;
+using SFBMS.Service.SystemModule;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +19,13 @@ namespace SFBMS.WebAPI.Infrastructure.ExceptionsFilter
         #region 构造函数
         private readonly RequestDelegate _next;
         private readonly ILogger<MiddlewareExceptionFilter> _logger;
-        public MiddlewareExceptionFilter(RequestDelegate next, ILogger<MiddlewareExceptionFilter> logger)
+        private ILogService _logService;
+
+        public MiddlewareExceptionFilter(RequestDelegate next, ILogger<MiddlewareExceptionFilter> logger, ILogService logService)
         {
             _next = next;
             _logger = logger;
+            _logService = logService;
         }
         #endregion
 
@@ -37,13 +42,31 @@ namespace SFBMS.WebAPI.Infrastructure.ExceptionsFilter
         }
         private async Task HandleExceptionAsync(HttpContext context, Exception ex)
         {         
-            int sysId = 1;
             string ip = context.Connection.RemoteIpAddress.ToString();
-            var uri = context.Request.Path.Value;
-            string errorString = $"中间件抓捕异常{{系统编号:{sysId};主机IP:{ip};异常接口:{uri}; 异常描述:{ex.Message}}}";
-            _logger.LogError(errorString);
+            string routeInfo = context.Request.Path.Value;
+            string errorString = $"中间件抓捕异常{{主机IP:{ip};来源:{ex.Source};异常接口:{routeInfo}; 异常描述:{ex.Message}}}";          
             context.Response.ContentType = "application/json;charset=utf-8";
-            await context.Response.WriteAsync("Middleware全局异常拦截：" + ex.Message);
+            await context.Response.WriteAsync("Middleware全局异常拦截：" + errorString);
+            _logger.LogError(errorString);
+            RecordNLog(ip, routeInfo, ex.Source, ex.Message);
+        }
+        /// <summary>
+        /// 记录日志到数据库
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        public Task RecordNLog(string ip, string routeInfo, string source, string message)
+        {
+            CreateNLogDTO dto = new CreateNLogDTO
+            {
+                MachineId = ip,
+                RouteInfo = routeInfo,
+                Origin = source,
+                Level = "error",
+                Message = message,
+                Detail = "",
+            };
+            return _logService.CreateNLogAsync(dto);
         }
     }
 }

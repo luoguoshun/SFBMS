@@ -10,4 +10,8 @@
     <ProjectReference Include="..\SFBMS.Repository\SFBMS.Repository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="OrderModule\" />
+  </ItemGroup>
+
 </Project>

@@ -7,17 +7,17 @@ using Microsoft.AspNetCore.Mvc;
 using OHEXML.Infrastructure.Attributes;
 using SFBMS.Common.Algorithm;
 using SFBMS.Common.EnumList;
-using SFBMS.Contracts.LogModule;
+using SFBMS.Contracts.SystemModule;
 using SFBMS.Service.SystemModule;
 using SFBMS.WebAPI.Controllers.Base;
 
 namespace SFBMS.WebAPI.Controllers.SystemModule
 {
-    public class LogController : BaseController
+    public class NLogController : BaseController
     {
         #region 构造函数
         public ILogService _logService;
-        public LogController(ILogService logService)
+        public NLogController(ILogService logService)
         {
             _logService = logService;
         }
@@ -29,9 +29,9 @@ namespace SFBMS.WebAPI.Controllers.SystemModule
         /// <returns></returns>
         [HttpPost]
         [AppAuthorize(AppTypes.Background)]
-        public async Task<IActionResult> GetLogList(SelectLogDTO dto)
+        public async Task<IActionResult> GetNLogList(SelectNLogDTO dto)
         {
-            var logs = await _logService.GetLogListAsync(dto);
+            var logs = await _logService.GetNLogListAsync(dto);
             return JsonSuccess(logs);
         }
     }

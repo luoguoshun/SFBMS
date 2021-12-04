@@ -1,0 +1,14 @@
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\bin\Debug\netcoreapp3.1\SFBMS.SignalR.deps.json
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\bin\Debug\netcoreapp3.1\SFBMS.SignalR.dll
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\obj\Debug\netcoreapp3.1\SFBMS.SignalR.csprojAssemblyReference.cache
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\obj\Debug\netcoreapp3.1\SFBMS.SignalR.AssemblyInfoInputs.cache
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\obj\Debug\netcoreapp3.1\SFBMS.SignalR.AssemblyInfo.cs
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\bin\Debug\netcoreapp3.1\SFBMS.SignalR.pdb
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\bin\Debug\netcoreapp3.1\SFBMS.Common.dll
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\bin\Debug\netcoreapp3.1\SFBMS.Contracts.dll
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\bin\Debug\netcoreapp3.1\SFBMS.Contracts.pdb
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\bin\Debug\netcoreapp3.1\SFBMS.Common.pdb
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\obj\Debug\netcoreapp3.1\SFBMS.SignalR.csproj.CoreCompileInputs.cache
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\obj\Debug\netcoreapp3.1\SFBMS.SignalR.csproj.CopyComplete
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\obj\Debug\netcoreapp3.1\SFBMS.SignalR.dll
+C:\Users\罗国顺\Desktop\SFBMSAPI\SFBMS.SignalR\obj\Debug\netcoreapp3.1\SFBMS.SignalR.pdb

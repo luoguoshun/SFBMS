@@ -93,7 +93,7 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
-        <member name="M:SFBMS.WebAPI.Controllers.SystemModule.LogController.GetLogList(SFBMS.Contracts.LogModule.SelectLogDTO)">
+        <member name="M:SFBMS.WebAPI.Controllers.SystemModule.NLogController.GetNLogList(SFBMS.Contracts.SystemModule.SelectNLogDTO)">
             <summary>
             获取日志列表
             </summary>
@@ -115,10 +115,31 @@
             全局异常处理过滤器(只能管到Controller而已 之外的异常无法捕获)
             </summary>
         </member>
+        <member name="M:SFBMS.WebAPI.Infrastructure.ExceptionsFilter.GlobalExceptionsFilter.RecordNLog(System.String,System.String,System.String,System.String)">
+            <summary>
+            记录日志到数据库
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
         <member name="T:SFBMS.WebAPI.Infrastructure.ExceptionsFilter.MiddlewareExceptionFilter">
             <summary>
             全局异常拦截器 GlobalExceptionsFilter无法拦截的在此拦截
             </summary>
+        </member>
+        <member name="M:SFBMS.WebAPI.Infrastructure.ExceptionsFilter.MiddlewareExceptionFilter.RecordNLog(System.String,System.String,System.String,System.String)">
+            <summary>
+            记录日志到数据库
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMS.WebAPI.Infrastructure.HostedService.StatisticsSubscribeService.PushStatisticsAsync(System.String)">
+            <summary>
+            推送订阅统计
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
         </member>
         <member name="P:SFBMS.WebAPI.Infrastructure.IdentityServer4.Config.ApiSources">
             <summary>
@@ -227,6 +248,21 @@
             </summary>
             <param name="services"></param>
             <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddCustomBackgroundTask(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            后台托管服务
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SFBMSAPI.CustomExtensionsMethods.AddCustomSignalR(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            SingleR服务
+            </summary>
+            <param name="services"></param>
             <returns></returns>
         </member>
     </members>

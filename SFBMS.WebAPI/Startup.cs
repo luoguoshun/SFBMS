@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
@@ -11,7 +12,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Connections;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,7 +30,11 @@ using SFBMS.Common.SiteConfig;
 using SFBMS.Entity.Context;
 using SFBMS.Repository.SystemModule;
 using SFBMS.Repository.SystemModule.Implement;
+using SFBMS.SignalR;
+using SFBMS.SignalR.ClientServer;
+using SFBMS.SignalR.Hub;
 using SFBMS.WebAPI.Infrastructure.ExceptionsFilter;
+using SFBMS.WebAPI.Infrastructure.HostedService;
 using SFBMS.WebAPI.Infrastructure.IdentityServer4;
 using SFBMS.WebAPI.Infrastructure.PolicyHelper;
 using static SFBMS.Common.EnumList.AppTypes;
@@ -41,7 +48,6 @@ namespace SFBMSAPI
         {
             Configuration = configuration;
         }
-
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpClient();
@@ -51,9 +57,9 @@ namespace SFBMSAPI
                     .AddCustomAddCors()
                     .AddCusomException()
                     .AddIdentityservice(Configuration)
-                    .AddTokenAuthentication(Configuration);
-
-            //services.AddScoped<Spreadsheet>();
+                    .AddTokenAuthentication(Configuration)
+                    .AddCustomBackgroundTask(Configuration)
+                    .AddCustomSignalR();
         }
         /// <summary>
         /// 运行时调用，用于配置HTTP请求管道。
@@ -62,7 +68,7 @@ namespace SFBMSAPI
         /// <param name="env"></param>
         /// <param name="loggerFactory">日志工厂</param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {          
+        {
             //请求管道中的每个中间件组件负责调用管道中的下一个组件，或使管道短路。 
             //当中间件短路时，它被称为“终端中间件”，因为它阻止中间件进一步处理请求。
             if (env.IsDevelopment())
@@ -110,10 +116,18 @@ namespace SFBMSAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/ChatHub", options =>
+                {
+                    //指定 长轮询 传输和 WebSockets 传输
+                    options.Transports = HttpTransportType.WebSockets | HttpTransportType.LongPolling;
+                }).RequireCors(t => t.WithOrigins(new string[] { "http://127.0.0.1:36779" })
+                  .AllowAnyHeader()
+                  .WithMethods("GET", "POST")
+                  .AllowCredentials());
             });
         }
 
-        #region 集成Autofac 
+        #region Autofac 
         /// <summary>
         /// 自定义容器服务注册
         /// </summary>
@@ -128,17 +142,17 @@ namespace SFBMSAPI
             {
                 container.RegisterType<PolicyHandler>().As<IAuthorizationHandler>().SingleInstance();
                 container.RegisterType<SFBMSContext>().As<DbContext>().AsImplementedInterfaces();
+                //全局共享一个实例(管理用户的连接Id)
+                container.RegisterType<ChatClientServer>().As<IChatClientServer>().SingleInstance();
                 container.RegisterType<HotNews>().As<IHotNews>().AsImplementedInterfaces();
                 container.RegisterType<Spreadsheet>().InstancePerLifetimeScope();
-                //container.RegisterType<ChatHub>().As<Hub>().SingleInstance();
-                //container.RegisterType<ChatClientServer>().As<IChatClientServer>().AsImplementedInterfaces();
 
                 #region 带有接口层的服务注入
                 var servicesDllFile = Path.Combine(AppContext.BaseDirectory, "SFBMS.Service.dll");
                 var repositoryDllFile = Path.Combine(AppContext.BaseDirectory, "SFBMS.Repository.dll");
                 if (!(File.Exists(servicesDllFile) || File.Exists(repositoryDllFile)))
                 {
-                    string msg = "Repository.dll和service.dll 可能丢失!!检查 bin 文件夹，并拷贝。";
+                    string msg = "Repository.dll和service.dll 可能丢失!!检查 bin 文件夹，并拷贝。";                   
                     Console.WriteLine($"服务注入:{msg}");
                 }
                 //RegisterAssemblyTypes()在程序集中注册所有类型。返回结果: 注册生成器，允许配置注册。
@@ -337,6 +351,50 @@ namespace SFBMSAPI
             });
             return services;
         }
+        /// <summary>
+        /// 后台托管服务
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
+        public static IServiceCollection AddCustomBackgroundTask(this IServiceCollection services, IConfiguration configuration)
+        {
+            #region 任务队列
+            //services.AddSingleton<MonitorLoop>();
+            //services.AddHostedService<QueuedServiceCenter>();
+            //services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>(ctx =>
+            //{
+            //    //int.TryParse()将数字的字符串表示形式转换为其等效的32位有符号整数
+            //    if (!int.TryParse(configuration["QueueCapacity"], out int queueCapacity))
+            //    {
+            //        queueCapacity = 100;/*排队容量*/
+            //    }
+            //    return new BackgroundTaskQueue(queueCapacity);
+            //});
+            #endregion
+            //services.AddHostedService<PushNoticeService>();
+            services.AddHostedService<StatisticsSubscribeService>();
+            return services;
+        }
+        /// <summary>
+        /// SingleR服务
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
+        public static IServiceCollection AddCustomSignalR(this IServiceCollection services)
+        {
+            //单个集线器==>ChatHub 用于替代中心提供的全局选项
+            services.AddSignalR().AddHubOptions<ChatHub>(hubOptions =>
+            {
+                hubOptions.EnableDetailedErrors = true; /*集线器方法中引发异常时，详细的异常消息将返回到客户端*/
+                hubOptions.KeepAliveInterval = TimeSpan.FromSeconds(20);/* 如果服务器未在此时间间隔内发送消息，则会自动发送 ping 消息，使连接保持打开状态*/
+            }).AddJsonProtocol(options =>
+                {
+                    //不更改属性名称的大小写
+                    options.PayloadSerializerOptions.PropertyNamingPolicy = null;
+                });
+            return services;
+        }
     }
-    
+
 }

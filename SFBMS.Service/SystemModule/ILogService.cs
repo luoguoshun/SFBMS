@@ -1,13 +1,11 @@
-﻿using SFBMS.Contracts.LogModule;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SFBMS.Contracts.SystemModule;
 using System.Threading.Tasks;
 
 namespace SFBMS.Service.SystemModule
 {
-   public interface ILogService
+    public interface ILogService
     {
-      Task<LogOutDTO>  GetLogListAsync(SelectLogDTO dto);
+        Task<NLogOutDTO> GetNLogListAsync(SelectNLogDTO dto);
+        Task<bool> CreateNLogAsync(CreateNLogDTO dto);
     }
 }

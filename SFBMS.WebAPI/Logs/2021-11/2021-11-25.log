@@ -1,0 +1,270 @@
+     时间: 2021-11-25 13:09:41.0039
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 13:18:46.8715
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 13:25:08.7682
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 13:25:41.9676
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{系统编号:1;主机IP:::1;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 13:32:57.7717
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:04:57.0567
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:06:32.0394
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:07:45.0757
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:11:46.4204
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:13:13.4048
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:14:18.5196
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:25:06.7668
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:34:02.1624
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:35:09.2331
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:36:59.7878
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:41:18.5500
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:48:14.8953
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 14:57:44.3497
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 15:01:49.7310
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 15:14:02.0183
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 15:23:52.2580
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 15:25:05.1995
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 15:27:52.6637
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 15:50:01.3896
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 21:40:59.8726
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 21:43:13.4813
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 21:44:44.1343
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 22:12:24.0436
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 22:13:51.3028
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-11-25 22:15:34.0620
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:::1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

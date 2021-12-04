@@ -24,26 +24,25 @@ namespace SFBMS.Repository.ClientModule.Implement
         /// <returns></returns>
         public async Task<ClientOutDTO> GetClientListAsync(SelectClientDTO dto)
         {
-            using (var connection = new SqlConnection(ConnectionString))
+            using var connection = new SqlConnection(ConnectionString);
+            DynamicParameters paramters = new DynamicParameters();
+            StringBuilder where = new StringBuilder("1=1");
+            if (!string.IsNullOrWhiteSpace(dto.Conditions))
             {
-                DynamicParameters paramters = new DynamicParameters();
-                StringBuilder where = new StringBuilder("1=1");
-                if(!string.IsNullOrWhiteSpace(dto.Conditions))
-                {
-                    where.Append(" and c.Name like @Name or c.Phone like @Phone ");
-                    paramters.Add("Name", $@"%{dto.Conditions}%");
-                    paramters.Add("Phone", $@"%{dto.Conditions}%");
-                }
-                if (dto.RoleId!=0)
-                {
-                    where.Append(" and r.RoleId = @RoleId ");
-                    paramters.Add("RoleId", dto.RoleId);
-                }
-                paramters.Add("row", dto.Row);
-                paramters.Add("page", dto.Page);
-                ClientOutDTO data = new ClientOutDTO
-                {
-                    Clients= await connection.QueryAsync<ClientDTO>($@"
+                where.Append(" and c.Name like @Name or c.Phone like @Phone ");
+                paramters.Add("Name", $@"%{dto.Conditions}%");
+                paramters.Add("Phone", $@"%{dto.Conditions}%");
+            }
+            if (dto.RoleId != 0)
+            {
+                where.Append(" and r.RoleId = @RoleId ");
+                paramters.Add("RoleId", dto.RoleId);
+            }
+            paramters.Add("row", dto.Row);
+            paramters.Add("page", dto.Page);
+            ClientOutDTO data = new ClientOutDTO
+            {
+                Clients = await connection.QueryAsync<ClientDTO>($@"
                      select c.ClientNo,c.Name,c.Sex,c.IdNumber,c.BirthDate,c.Address,c.Phone,c.State,c.CreateTime,c.HeaderImgSrc,
                      STRING_AGG(r.Name, '、') as RoleName
                      from ClientInfo as c 
@@ -53,17 +52,15 @@ namespace SFBMS.Repository.ClientModule.Implement
                      GROUP BY c.ClientNo,c.Name,c.Sex,c.IdNumber,c.BirthDate,c.Address,c.Phone,c.State,c.CreateTime,HeaderImgSrc
                      order by c.CreateTime asc
                      offset @row * (@page - 1) rows fetch next @row rows only", paramters),
-                    Count = await connection.QueryFirstOrDefaultAsync<int>($@"
+                Count = await connection.QueryFirstOrDefaultAsync<int>($@"
                      select COUNT(*)
                      from ClientInfo as c
                      left join User_Role as ur on c.ClientNo = ur.UserId
                      left join RoleInfo as r on r.RoleId = ur.RoleId
                      where {where}
                      GROUP BY c.ClientNo,c.Name,c.Sex,c.IdNumber,c.BirthDate,c.Address,c.Phone,c.State,c.CreateTime", paramters)
-
-                };
-                return data;
-            }
+            };
+            return data;
         }
     }
 }

@@ -1,0 +1,33 @@
+     时间: 2021-12-01 13:38:31.2446
+     路由: http://127.0.0.1/connect/token
+     级别: Error
+     信息: 中间件抓捕异常{主机IP:127.0.0.1;来源:Microsoft.EntityFrameworkCore;异常接口:/connect/token; 异常描述:The dependent side could not be determined for the one-to-one relationship between 'Borrow.ToExamine' and 'ToExamine.Borrow'. To identify the dependent side of the relationship, configure the foreign key property. If these navigations should not be part of the same relationship, configure them independently via separate method chains in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-12-01 13:40:50.5383
+     路由: http://127.0.0.1/connect/token
+     级别: Error
+     信息: 中间件抓捕异常{主机IP:127.0.0.1;来源:Microsoft.EntityFrameworkCore;异常接口:/connect/token; 异常描述:The dependent side could not be determined for the one-to-one relationship between 'Borrow.ToExamine' and 'ToExamine.Borrow'. To identify the dependent side of the relationship, configure the foreign key property. If these navigations should not be part of the same relationship, configure them independently via separate method chains in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-12-01 13:50:42.7422
+     路由: http://127.0.0.1/connect/token
+     级别: Error
+     信息: 中间件抓捕异常{主机IP:127.0.0.1;来源:Microsoft.EntityFrameworkCore;异常接口:/connect/token; 异常描述:The relationship from 'ToExamine.Borrow' to 'Borrow.ToExamine' with foreign key properties {'BorrowId' : string} cannot target the primary key {'Id' : int} because it is not compatible. Configure a principal key or a set of compatible foreign key properties for this relationship.}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-12-01 13:53:43.6313
+     路由: http://127.0.0.1/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:127.0.0.1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:“，”附近有语法错误。
+在 FETCH 语句中选项 next 的用法无效。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

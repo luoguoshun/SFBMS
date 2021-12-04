@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
+using SFBMS.Contracts.SystemModule;
+using SFBMS.Service.SystemModule;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,24 +16,44 @@ namespace SFBMS.WebAPI.Infrastructure.ExceptionsFilter
     public class GlobalExceptionsFilter : IAsyncExceptionFilter
     {
         private readonly ILogger<GlobalExceptionsFilter> _logger;
-        public GlobalExceptionsFilter(ILogger<GlobalExceptionsFilter> logger)
+        private ILogService _logService;
+        public GlobalExceptionsFilter(ILogger<GlobalExceptionsFilter> logger, ILogService logService)
         {
             _logger = logger;
+            _logService = logService;
         }
         public Task OnExceptionAsync(ExceptionContext context)
         {
             if (context.ExceptionHandled == false)
             {
-                Exception ex = context.Exception;/*这里给系统分配标识，监控异常肯定不止一个系统。*/
-                int sysId = 1;/*监控了ip方便定位到底是那台服务器出故障了*/
+                Exception ex = context.Exception;
                 string ip = context.HttpContext.Connection.RemoteIpAddress.ToString();
-                string uri = context.HttpContext.Request.Path.Value;
-                string errorString = $"全局异常{{系统编号:{sysId};主机IP:{ip};异常接口:{uri}; 异常描述:{ex.Message}}}";
+                string routeInfo = context.HttpContext.Request.Path.Value;
+                string errorString = $"全局异常{{主机IP:{ip};来源:{ex.Source};异常接口:{routeInfo}; 异常描述:{ex.Message}}}";
+                context.Result = new JsonResult("Controller全局异常拦截：" + errorString);
                 _logger.LogError(errorString);
-                context.Result = new JsonResult("Controller全局异常拦截：" + ex.Message);
+                RecordNLog(ip, routeInfo, ex.Source, ex.Message);
             }
-            context.ExceptionHandled = true; //异常已处理了
+            context.ExceptionHandled = true; //异常已处理
             return Task.CompletedTask;
+        }
+        /// <summary>
+        /// 记录日志到数据库
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        public Task RecordNLog(string ip, string routeInfo, string source, string message)
+        {
+            CreateNLogDTO dto = new CreateNLogDTO
+            {
+                MachineId = ip,
+                RouteInfo = routeInfo,
+                Origin = source,
+                Level = "error",
+                Message = message,
+                Detail = "",
+            };
+            return _logService.CreateNLogAsync(dto);
         }
     }
 }

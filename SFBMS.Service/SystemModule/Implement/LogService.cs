@@ -1,4 +1,5 @@
-﻿using SFBMS.Contracts.LogModule;
+﻿using SFBMS.Contracts.SystemModule;
+using SFBMS.Entity.SystemModule;
 using SFBMS.Repository.SystemModule;
 using System;
 using System.Threading.Tasks;
@@ -7,8 +8,8 @@ namespace SFBMS.Service.SystemModule.Implement
 {
     public class LogService : ILogService
     {
-        public ILogRepository _logRepository;
-        public LogService(ILogRepository logRepository)
+        public INLogRepository _logRepository;
+        public LogService(INLogRepository logRepository)
         {
             _logRepository = logRepository;
         }
@@ -17,9 +18,29 @@ namespace SFBMS.Service.SystemModule.Implement
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-        public async Task<LogOutDTO> GetLogListAsync(SelectLogDTO dto)
+        public async Task<NLogOutDTO> GetNLogListAsync(SelectNLogDTO dto)
         {
             return await _logRepository.GetLogListAsync(dto);
+        }
+        /// <summary>
+        /// 添加日志
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        public async Task<bool> CreateNLogAsync(CreateNLogDTO dto)
+        {
+            NLogInfo log = new NLogInfo
+            {
+                MachineId = dto.MachineId,
+                Origin = dto.Origin,
+                RouteInfo = dto.RouteInfo,
+                Level = dto.Level,
+                Message = dto.Message,
+                Detail = dto.Detail,
+                Date = DateTime.Now
+            };
+            await _logRepository.AddEntityAsync(log);
+            return await _logRepository.SaveChangeAsync();
         }
     }
 }
