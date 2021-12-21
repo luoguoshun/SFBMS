@@ -1,0 +1,16 @@
+     时间: 2021-12-21 22:39:07.8317
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:127.0.0.1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:为 FETCH 子句提供的行数必须大于零。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+
+     时间: 2021-12-21 22:39:51.1131
+     路由: http://localhost/api/Background/Book/GetBookList
+     级别: Error
+     信息: 全局异常{主机IP:127.0.0.1;来源:Core Microsoft SqlClient Data Provider;异常接口:/api/Background/Book/GetBookList; 异常描述:为 FETCH 子句提供的行数必须大于零。}
+     堆栈跟踪信息: 
+     
+     ************************************************     
+

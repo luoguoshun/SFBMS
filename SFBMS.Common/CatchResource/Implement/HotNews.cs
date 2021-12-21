@@ -83,7 +83,6 @@ namespace SFBMS.Common.CatchResource.Implement
                 Console.WriteLine(ex.Message.ToString());
                 throw;
             }
-
         }
         /// <summary>
         /// 打开网址抓取电影信息
@@ -118,7 +117,6 @@ namespace SFBMS.Common.CatchResource.Implement
                 throw;
             }
         }
-
         /// <summary>
         /// 下载图片
         /// </summary>

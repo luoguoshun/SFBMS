@@ -387,7 +387,7 @@ namespace SFBMSAPI
             services.AddSignalR().AddHubOptions<ChatHub>(hubOptions =>
             {
                 hubOptions.EnableDetailedErrors = true; /*集线器方法中引发异常时，详细的异常消息将返回到客户端*/
-                hubOptions.KeepAliveInterval = TimeSpan.FromSeconds(20);/* 如果服务器未在此时间间隔内发送消息，则会自动发送 ping 消息，使连接保持打开状态*/
+                hubOptions.KeepAliveInterval = TimeSpan.FromSeconds(10);/* 如果服务器未在此时间间隔内发送消息，则会自动发送 ping 消息，使连接保持打开状态*/
             }).AddJsonProtocol(options =>
                 {
                     //不更改属性名称的大小写
